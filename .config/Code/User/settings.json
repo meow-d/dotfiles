@@ -1,0 +1,67 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.autoSave": "afterDelay",
+  "code-runner.runInTerminal": true,
+  "python.showStartPage": false,
+  "python.languageServer": "Pylance",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "git.enableSmartCommit": true,
+  "gitlens.views.repositories.location": "gitlens",
+  "gitlens.views.fileHistory.location": "gitlens",
+  "gitlens.views.lineHistory.location": "gitlens",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
+  "python.autoComplete.addBrackets": true,
+  "tabnine.experimentalAutoImports": true,
+  "glassit.alpha": 240,
+  "python.analysis.completeFunctionParens": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "terminal.integrated.rendererType": "dom",
+  "vscode_vibrancy.theme": "Default Dark",
+  "workbench.startupEditor": "newUntitledFile",
+  "glassit-linux.opacity": 20,
+  "editor.fontFamily": "Fira Code, Twemoji",
+  "workbench.sideBar.location": "left",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.fontLigatures": "'ss01','cv01','cv02','ss05'",
+  "workbench.productIconTheme": "icons-carbon",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnType": true,
+  "dart.closingLabels": false,
+  "editor.lineHeight": 22,
+  "editor.fontSize": 13,
+  "dart.env": {
+    "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
+  },
+  "workbench.colorTheme": "Atom One Light",
+  "gitProjectManager.baseProjectsFolders": [
+    "~/nerd-stuff"
+  ],
+  "foam.openDailyNote.filenameFormat": "yyyy-mm-dd h:MM:ss tt",
+  "foam.openDailyNote.titleFormat": "yyyy-mm-dd h:MM:ss tt",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "errorLens.gutterIconSet": "defaultOutline",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "fill",
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.enabled": false,
+  "todo-tree.highlights.useColourScheme": true,
+  "markdown.extension.italic.indicator": "_"
+}
