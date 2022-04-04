@@ -28,40 +28,60 @@
   "vscode_vibrancy.theme": "Default Dark",
   "workbench.startupEditor": "newUntitledFile",
   "glassit-linux.opacity": 20,
-  "editor.fontFamily": "Fira Code, Twemoji",
-  "workbench.sideBar.location": "left",
+  "editor.fontFamily": "Cascadia Code, Twemoji",
   "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "explorer.confirmDelete": false,
   "git.confirmSync": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
   "editor.fontLigatures": "'ss01','cv01','cv02','ss05'",
   "workbench.productIconTheme": "icons-carbon",
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnType": true,
   "dart.closingLabels": false,
-  "editor.lineHeight": 22,
+  "editor.lineHeight": 24,
   "editor.fontSize": 13,
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "Andromeda Italic Bordered",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
   "foam.openDailyNote.filenameFormat": "yyyy-mm-dd h:MM:ss tt",
   "foam.openDailyNote.titleFormat": "yyyy-mm-dd h:MM:ss tt",
   "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "toggle",
-  "errorLens.gutterIconSet": "defaultOutline",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.size": "fill",
   "editor.minimap.maxColumn": 80,
   "editor.minimap.enabled": false,
   "todo-tree.highlights.useColourScheme": true,
-  "markdown.extension.italic.indicator": "_"
+  "markdown.extension.italic.indicator": "_",
+  "ltex.disabledRules": {
+    "en-GB": [
+      "UPPERCASE_SENTENCE_START"
+    ]
+  },
+  "ltex.language": "en-GB",
+  "terminal.external.linuxExec": "kitty",
+  "terminal.integrated.fontWeight": "600",
+  "editor.linkedEditing": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "zenMode.hideLineNumbers": false,
+  "editor.cursorSurroundingLines": 6,
+  "markdown-links.graphType": "obsidian",
+  "markless.horizontalRule": false,
+  "markless.list": false,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.gutterIconSize": "auto",
+  "workbench.experimental.layoutControl.enabled": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "breadcrumbs.filePath": "last"
 }

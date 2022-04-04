@@ -32,8 +32,8 @@ SAVEHIST=1000
 export LC_ALL="en_US.UTF-8"
 
 # Default text editor
-export VISUAL=/bin/nano
-export EDITOR=/bin/nano
+export VISUAL=/usr/bin/micro
+export EDITOR=/usr/bin/micro
 
 # Ruby PATH
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
@@ -127,7 +127,7 @@ bindkey "^[[1;5D" backward-word
 ###########
 alias    _="sudo"
 alias -g ls="exa --icons"
-alias    n="nano"
+alias    n="micro"
 alias    nn="sudoedit"
 alias -g p="sudo pacman"
 alias    pi="p -S"
@@ -138,6 +138,7 @@ alias -g y="paru"
 alias    yi="y -S"
 alias    yu="y -R"
 alias    ytbb="yt-dlp -f bestvideo+bestaudio"
+alias    icat="kitty +kitten icat"
 
 
 #####################

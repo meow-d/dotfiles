@@ -1,7 +1,7 @@
 format = "$character"
 
 right_format = "$all$time$sudo"
-continuation_prompt = "»»"
+continuation_prompt = " »»"
 
 [character]
 success_symbol = "[ »»](bold green)"

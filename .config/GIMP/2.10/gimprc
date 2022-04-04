@@ -57,7 +57,8 @@
     (padding-in-show-all no))
 (toolbox-group-menu-mode hover)
 (icon-theme "Symbolic-High-Contrast")
-(layer-new-name "White")
+(layer-new-name "Black")
+(layer-new-fill-type foreground)
 (layer-add-mask-type selection)
 (fill-options
     (style solid)
