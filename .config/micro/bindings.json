@@ -1,6 +1,39 @@
 {
+
+    // Built-in
     "Alt-/": "lua:comment.comment",
-    "Ctrl-Underscore": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+
+    // Custom
     "Ctrl-Delete": "DeleteWordRight",
-    "OldBackspace": "DeleteWordLeft"
+    "OldBackspace": "DeleteWordLeft",
+
+    "Ctrl-Up":"ScrollUp",
+    "Ctrl-Down":"ScrollDown",
+
+    "CtrlAltRight":"VSplit",
+    "Alt-,":"PreviousSplit",
+    "Alt-.":"NextSplit",
+
+    "Ctrl-w":"Quit",
+    "Ctrl-q":"QuitAll",
+
+    "Ctrl-d":"SpawnMultiCursor",
+    "Ctrl-Alt-Up":"SpawnMultiCursorUp",
+    "Ctrl-Alt-Down":"SpawnMultiCursorDown",
+
+    "Ctrl-l":"SelectLine",
+
+    "Ctrl-p":"CommandMode",
+    "Ctrl-g":"command-edit:goto ",
+
+    "CtrlBackslash":"JumpToMatchingBrace",
+
+    // Bonus stuff
+    "<Ctrl-k><t>":"command-edit:set colorscheme ",
+
+    // File manager
+    "Ctrl-b":"lua:filemanager.toggle_tree",
+    "F2":"lua:filemanager.rename_at_cursor|Save",
+    "Enter":"lua:filemanager.try_open_at_cursor|InsertNewline",
 }

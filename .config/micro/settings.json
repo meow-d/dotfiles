@@ -1,1 +1,14 @@
-{}
+{
+    "autosu": true,
+    "colorscheme": "atom-dark-transparent",
+    "divchars": "│─",
+    "filemanager-openonstart": true,
+    "filemanager-showignored": false,
+    "hlsearch": true,
+    "softwrap": true,
+    "statusformatl": " $(filename) $(modified)$(status.paste)",
+    "statusformatr": "($(line),$(col)) $(opt:filetype) ",
+    "tabmovement": true,
+    "tabstospaces": true,
+    "wordwarp": true
+}
