@@ -45,7 +45,7 @@
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Andromeda Italic Bordered",
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
