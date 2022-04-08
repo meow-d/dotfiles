@@ -50,6 +50,7 @@ export CHROME_EXECUTABLE="/usr/bin/google-chrome-stable"
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=(underline,fg=yellow)
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=(underline,fg=red)
 HISTORY_SUBSTRING_SEARCH_FUZZY=yes
+HISTORY_SUBSTRING_SEARCH_FUZZY=yes
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)

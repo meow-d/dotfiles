@@ -22,7 +22,7 @@
     "Ctrl-Alt-Up":"SpawnMultiCursorUp",
     "Ctrl-Alt-Down":"SpawnMultiCursorDown",
 
-    "Ctrl-l":"SelectLine",
+    "Ctrl-l":"StartOfLine,SelectLine",
 
     "Ctrl-p":"CommandMode",
     "Ctrl-g":"command-edit:goto ",
