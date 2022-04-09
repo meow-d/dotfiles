@@ -174,6 +174,8 @@ unsetopt auto_name_dirs
 unsetopt BEEP
 select-word-style bash
 
+setopt COMBINING_CHARS
+
 
 ####################
 # Zsh completion #
