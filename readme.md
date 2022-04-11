@@ -3,6 +3,8 @@ Managed using yadm
 
 ![Neofetch](2022-04-11-15-03-58.png)
 ![Micro](2022-04-11-15-05-00.png)
+![VSCode](2022-04-11-15-08-55.png)
+
 ## Terminal
 - Kitty (best terminal)
   - Dracula, some colours modified
