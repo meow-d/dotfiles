@@ -43,6 +43,9 @@ export PATH="$PATH:$GEM_HOME/bin"
 PATH="$HOME/.local/bin:$PATH"
 export npm_config_prefix="$HOME/.local"
 
+# Rust cargo PATH 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Chrome
 export CHROME_EXECUTABLE="/usr/bin/google-chrome-stable"
 

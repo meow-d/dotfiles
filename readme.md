@@ -5,23 +5,22 @@ Managed using yadm
 ![Micro](.yadm/images/2022-04-11-15-05-00.png)
 ![VSCode](.yadm/images/2022-04-11-15-08-55.png)
 
-## Terminal
-- Kitty (best terminal)
+## Included configs
+- Kitty
   - Dracula, some colours modified
-- Custom Starship prompt
-- Zsh
-  - fast-syntax-highlighting overlay to change the highlighting for global alias
+- ZSH
+  - fast-syntax-highlighting overlay, to change the highlighting for global alias
+- Micro
+  - Atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
+  - Made a plugin to emulate the `ctrl + l` behaviour of vscode
+- Starship
+- KDE Plasma
+  - Modified the ChromeOS theme's window decoration, to match terminal theme
+- Latte dock
 
-## Micro
-- Atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
-- VSCode-like key bindings
-- Made a plugin the emulate the `ctrl + l` behaviour of vscode
-
-## KDE Plasma
-- ChromeOS theme
-  - Modified window decoration to match terminal theme
+## Not included configs
 - Font: Google Product Sans
-- ✨ Blur ✨
+- Blur
 
 ## TODO
 - [ ] even more screenshots

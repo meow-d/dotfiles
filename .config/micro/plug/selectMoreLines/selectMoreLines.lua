@@ -20,5 +20,5 @@ end
 
 function init()
     config.MakeCommand("selectMoreLines", selectMoreLines, config.NoComplete)
-    config.TryBindKey("Ctrl-l", "lua:selectMoreLines:selectMoreLines", false)
+    config.AddRuntimeFile("selectMoreLines", config.RTHelp, "help/selectMoreLines-plugin.md")
 end
