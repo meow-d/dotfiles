@@ -1,8 +1,8 @@
 # My dotfiles (very cool)
 Managed using yadm
 
-![Desktop](2022-04-07-17-50-28.png)
-
+![Neofetch](2022-04-11-15-03-58.png)
+![Micro](2022-04-11-15-05-00.png)
 ## Terminal
 - Kitty (best terminal)
   - Dracula, some colours modified
