@@ -10,9 +10,12 @@ Managed using yadm
   - Dracula, some colours modified
 - Custom Starship prompt
 - Zsh
+  - fast-syntax-highlighting overlay to change the highlighting for global alias
 
 ## Micro
-- Atom one dark, but modified to use the terminal's background for the ✨ blur ✨
+- Atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
+- VSCode-like key bindings
+- Made a plugin the emulate the `ctrl + l` behaviour of vscode
 
 ## KDE Plasma
 - ChromeOS theme
