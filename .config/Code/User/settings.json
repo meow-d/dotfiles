@@ -45,7 +45,7 @@
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Quiet Light",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
@@ -56,7 +56,6 @@
   "editor.minimap.size": "fill",
   "editor.minimap.maxColumn": 80,
   "editor.minimap.enabled": false,
-  "todo-tree.highlights.useColourScheme": true,
   "markdown.extension.italic.indicator": "_",
   "ltex.disabledRules": {
     "en-GB": [
@@ -82,6 +81,13 @@
   "errorLens.gutterIconSize": "auto",
   "workbench.experimental.layoutControl.enabled": true,
   "window.menuBarVisibility": "toggle",
+  "breadcrumbs.filePath": "last",
+  "markless.inlineImage.autoPreview": false,
+  "markless.inlineImage.enabled": false,
+  "markless.hoverImage": false,
+  "markless.inlineCode": false,
+  "markless.latex": false,
+  "markless.table": false,
   "workbench.activityBar.visible": false,
-  "breadcrumbs.filePath": "last"
+  "todo-tree.highlights.useColourScheme": true
 }

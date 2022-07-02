@@ -6,7 +6,7 @@
    version="1.1"
    viewBox="0 0 300 300"
    sodipodi:docname="decoration.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -37,12 +37,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1042"
+     inkscape:window-height="996"
      id="namedview57"
      showgrid="false"
-     inkscape:zoom="1.6625503"
-     inkscape:cx="54.735185"
-     inkscape:cy="152.77733"
+     inkscape:zoom="4.0548169"
+     inkscape:cx="162.76937"
+     inkscape:cy="175.47031"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -56,7 +56,9 @@
      inkscape:guide-bbox="true"
      inkscape:snap-nodes="true"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#646464">
     <inkscape:grid
        type="xygrid"
        id="grid864"
@@ -154,6 +156,50 @@
        inkscape:collect="always"
        xlink:href="#shadow-active"
        id="radialGradient904"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(8.0213414e-7,1.8666672,2.4000015,-1.606455e-6,-156.24229,-368.03704)"
+       cx="259.84128"
+       cy="103.43414"
+       fx="259.84128"
+       fy="103.43414"
+       r="10" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#shadow-active"
+       id="radialGradient2003"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(6.8281189e-7,-1.6000008,2.3999997,1.0242172e-6,-132.00011,458.55565)"
+       cx="262.2222"
+       cy="93.333313"
+       fx="262.2222"
+       fy="93.333313"
+       r="10" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#shadow-active"
+       id="radialGradient2023"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(6.8281189e-7,-1.6000008,2.3999997,1.0242172e-6,-132.00011,458.55565)"
+       cx="262.2222"
+       cy="93.333313"
+       fx="262.2222"
+       fy="93.333313"
+       r="10" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#shadow-active"
+       id="radialGradient2043"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(8.0213414e-7,1.8666672,2.4000015,-1.606455e-6,-156.24229,-368.03704)"
+       cx="259.84128"
+       cy="103.43414"
+       fx="259.84128"
+       fy="103.43414"
+       r="10" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#shadow-active"
+       id="radialGradient2053"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(8.0213414e-7,1.8666672,2.4000015,-1.606455e-6,-156.24229,-368.03704)"
        cx="259.84128"
@@ -350,4 +396,94 @@
      width="100%"
      height="100%"
      style="fill-rule:evenodd;fill:#000000;fill-opacity:1" />
+  <g
+     id="g2674"
+     inkscape:label="mask">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#decoration-left-6"
+       id="mask-right"
+       transform="matrix(-1,0,0,1,284.22797,4.053156e-7)"
+       width="100%"
+       height="100%"
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+       inkscape:label="" />
+    <g
+       id="decoration-topleft-0"
+       transform="translate(-162.88602,75.520999)">
+      <path
+         id="mask-topleft"
+         d="m 245,86 c -2.216,0 -4,1.784 -4,4 v 26 h 14 V 86 Z"
+         style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.9718;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sscccs" />
+    </g>
+    <g
+       id="decoration-left-6"
+       transform="translate(-162.88602,86.520999)">
+      <rect
+         style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.83303;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="mask-left"
+         width="14"
+         height="60"
+         x="241"
+         y="105" />
+    </g>
+    <g
+       id="decoration-top-8"
+       transform="matrix(0,1,-1.6666667,0,367.11399,-79.479001)">
+      <rect
+         y="105"
+         x="241"
+         height="60.000004"
+         width="30"
+         id="mask-top"
+         style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.83303;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    </g>
+    <rect
+       style="opacity:0.8;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="mask-center"
+       width="100"
+       height="60"
+       x="92.113968"
+       y="191.521" />
+    <g
+       id="decoration-bottomleft-4"
+       transform="matrix(1,0,0,-1,-162.88602,351.521)">
+      <path
+         style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.9718;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 78,127 c 0,2.216 1.784,4 4,4 h 10 v -4 z"
+         transform="matrix(1,0,0,-1,163,227)"
+         id="mask-bottomleft"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.83303;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="mask-bottom"
+       width="4"
+       height="60.000004"
+       x="251"
+       y="105"
+       inkscape:label="mask-bottom"
+       transform="matrix(0,-1,-1.6666667,0,367.11399,506.521)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#decoration-topleft-0"
+       id="mask-topright"
+       transform="matrix(-1,0,0,1,284.22797,-4.053156e-7)"
+       width="100%"
+       height="100%"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#decoration-bottomleft-4"
+       id="mask-bottomright"
+       transform="matrix(-1,0,0,1,284.22797,-4.0531557e-7)"
+       width="100%"
+       height="100%"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd" />
+  </g>
 </svg>

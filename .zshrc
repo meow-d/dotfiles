@@ -75,6 +75,7 @@ zi wait'0a' lucid for \
     djui/alias-tips \
     katrinleinweber/oh-my-zsh-youtube-dl-aliases \
     zsh-users/zsh-completions \
+    bilelmoussaoui/flatpak-zsh-completion \
     OMZ::plugins/git \
     OMZ::plugins/github \
     OMZ::plugins/pip \
@@ -131,19 +132,25 @@ bindkey "^[[1;5D" backward-word
 ###########
 alias    _="sudo"
 alias -g ls="exa --icons"
+
 alias    n="micro"
 alias    nn="sudoedit"
-alias -g p="sudo pacman"
+
+alias -g p="paru"
 alias    pi="p -S"
 alias    pu="p -R"
 alias    psyy="p -Syy"
 alias    psyu="p -Syu"
+
 alias -g y="paru"
 alias    yi="y -S"
 alias    yu="y -R"
+
 alias    ytbb="yt-dlp -f bestvideo+bestaudio"
 alias    icat="kitty +kitten icat"
+alias    iwlrestart="_ modprobe -r iwlmvm iwlwifi && sleep 1 && _ modprobe iwlmvm iwlwifi"
 
+alias    cat='bat'
 
 #####################
 # Coloured commands #
