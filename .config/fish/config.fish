@@ -11,7 +11,7 @@ set -x STARSHIP_LOG "error"
 
 set -x VISUAL "micro"
 set -x EDITOR "micro"
-
+fish_add_path $HOME/.local/bin
 
 ### Functions
 # auto ls when change directory

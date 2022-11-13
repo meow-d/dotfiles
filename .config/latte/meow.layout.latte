@@ -6,11 +6,11 @@ activityId=
 byPassWM=false
 dockWindowBehavior=true
 enableKWinEdges=true
-formfactor=2
+formfactor=3
 immutability=1
 isPreferredForShortcuts=true
 lastScreen=10
-location=4
+location=5
 name=
 onPrimary=true
 plugin=org.kde.latte.containment
@@ -28,7 +28,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][4][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][1][Applets][4][Configuration][ConfigDialog]
 DialogHeight=720
@@ -45,72 +45,48 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][1][Applets][5][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 SystrayContainmentId=6
 
-[Containments][1][Applets][64]
+[Containments][1][Applets][93]
 immutability=1
-plugin=org.kde.plasma.digitalclock
+plugin=org.kde.plasma.splitdigitalclock
 
-[Containments][1][Applets][64][Configuration]
-PreloadWeight=97
+[Containments][1][Applets][93][Configuration]
+PreloadWeight=92
 
-[Containments][1][Applets][64][Configuration][Appearance]
-dateDisplayFormat=BesideTime
-showDate=false
+[Containments][1][Applets][93][Configuration][Appearance]
+boldText=true
+dateFormat=longDate
+fontFamily=Iosevka
+spinboxHorizontalPercentage=30
+use24hFormat=0
 
-[Containments][1][Applets][64][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
+[Containments][1][Applets][93][Configuration][ConfigDialog]
+DialogHeight=570
+DialogWidth=760
 
-[Containments][1][Applets][69]
+[Containments][1][Applets][95]
 immutability=1
-plugin=org.kde.plasma.pager
+plugin=org.kde.latte.plasmoid
 
-[Containments][1][Applets][69][Configuration]
+[Containments][1][Applets][95][Configuration]
 PreloadWeight=0
 
-[Containments][1][Applets][69][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
-
-[Containments][1][Applets][69][Configuration][General]
-showOnlyCurrentScreen=true
-wrapPage=true
-
-[Containments][1][Applets][89]
-immutability=1
-plugin=org.kde.plasma.win7showdesktop
-
-[Containments][1][Applets][89][Configuration]
-PreloadWeight=0
-
-[Containments][1][Applets][89][Configuration][ConfigDialog]
-DialogHeight=993
-DialogWidth=1920
-
-[Containments][1][Applets][89][Configuration][General]
-click_action=minimizeall
-peekingEnabled=true
-size=1
-
-[Containments][1][Applets][90]
-immutability=1
-plugin=org.kde.plasma.taskmanager
-
-[Containments][1][Applets][90][Configuration]
-PreloadWeight=0
-
-[Containments][1][Applets][90][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][1][Applets][90][Configuration][General]
-groupingStrategy=0
-launchers=applications:org.mozilla.firefox.desktop,preferred://filemanager,applications:kitty.desktop,applications:visual-studio-code.desktop
+[Containments][1][Applets][95][Configuration][General]
+groupTasksByDefault=false
+isInLatteDock=true
+isPreferredForDroppedLaunchers=false
+launchers59=applications:org.mozilla.firefox.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop,applications:visual-studio-code.desktop
 middleClickAction=Close
-separateLaunchers=false
-showOnlyCurrentScreen=true
+showOnlyCurrentDesktop=true
+
+[Containments][1][Applets][96]
+immutability=1
+plugin=SimplePager
+
+[Containments][1][Applets][96][Configuration]
+PreloadWeight=0
 
 [Containments][1][ConfigDialog]
 DialogHeight=600
@@ -123,23 +99,24 @@ PreloadWeight=0
 advanced=false
 alignment=10
 alignmentUpgraded=true
-appletOrder=4;90;69;5;64;89
+animationsEnabled=false
+appletOrder=4;95;96;5;93
 appletShadowsEnabled=false
 autoDecreaseIconSize=false
 backgroundRadius=30
 closeActiveWindowEnabled=true
 dragActiveWindowEnabled=true
-durationTime=x1
 floatingInternalGapIsForced=false
 iconMargin=0
 iconSize=30
 inConfigureAppletsMode=true
 lastSidebarVisibilityMode=9
+lengthExtMargin=7
 minLength=57
 panelPosition=10
 panelShadows=false
 panelSize=100
-panelTransparency=80
+panelTransparency=90
 shadowColor=000000
 shadowColorType=Theme
 shadowOpacity=30
@@ -149,29 +126,31 @@ showGlow=false
 splitterPosition=3
 splitterPosition2=4
 tasksUpgraded=true
-thickMargin=31
+thickMargin=28
 zoomLevel=0
 
 [Containments][1][Indicator]
-customType=org.kde.latte.win10
+customType=org.kde.latte.dashtopanel
 enabled=true
-type=org.kde.latte.win10
+type=org.kde.latte.dashtopanel
 
 [Containments][1][Indicator][org.kde.latte.dashtopanel][General]
-lengthPadding=0.03
-style=Dashes
+lengthPadding=0.27
+lineThickness=0.02
+maxBackgroundOpacity=0.4
 
 [Containments][1][Indicator][org.kde.latte.default][General]
+activeStyle=Dot
 backgroundCornerMargin=0
 extraDotOnActive=true
 glowOpacity=0.1
 lengthPadding=0.2
 minimizedTaskColoredDifferently=true
-size=0.05
+size=0.15
 thickMargin=0.04
 
 [Containments][1][Indicator][org.kde.latte.plasma][General]
-lengthPadding=0.25
+lengthPadding=0
 reversed=true
 
 [Containments][1][Indicator][org.kde.latte.win10][General]
@@ -200,11 +179,13 @@ glowOpacity=0.8
 [Containments][6]
 PreloadWeight=0
 activityId=
-formfactor=2
+formfactor=3
 immutability=1
 lastScreen=-1
-location=4
+location=5
 plugin=org.kde.plasma.private.systemtray
+popupHeight=649
+popupWidth=480
 wallpaperplugin=org.kde.image
 
 [Containments][6][Applets][10]
@@ -212,14 +193,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][6][Applets][10][Configuration]
-PreloadWeight=0
+PreloadWeight=37
 
 [Containments][6][Applets][11]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][6][Applets][11][Configuration]
-PreloadWeight=97
+PreloadWeight=39
 
 [Containments][6][Applets][13]
 immutability=1
@@ -233,14 +214,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][6][Applets][14][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][6][Applets][16]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][6][Applets][16][Configuration]
-PreloadWeight=97
+PreloadWeight=40
 
 [Containments][6][Applets][58]
 immutability=1
@@ -279,7 +260,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][6][Applets][9][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][6][Applets][9][Configuration][ConfigDialog]
 DialogHeight=720
@@ -288,21 +269,14 @@ DialogWidth=960
 [Containments][6][Applets][9][Configuration][General]
 volumeStep=2
 
-[Containments][6][Applets][91]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
-
-[Containments][6][Applets][91][Configuration]
-PreloadWeight=42
-
 [Containments][6][ConfigDialog]
-DialogHeight=995
-DialogWidth=1920
+DialogHeight=1048
+DialogWidth=1874
 
 [Containments][6][General]
 extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.nightcolorcontrol,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout
-hiddenItems=org.kde.kdeconnect,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,Optimus Manager Qt,qBittorrent,vlc,Discover Notifier_org.kde.DiscoverNotifier
-knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.vault
+hiddenItems=org.kde.kdeconnect,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,qBittorrent,vlc,Discover Notifier_org.kde.DiscoverNotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,Fcitx,Optimus Manager Qt
+knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.vault,org.kde.plasma.printmanager
 scaleIconsToFit=true
 shownItems=org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.networkmanagement
 

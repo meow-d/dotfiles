@@ -1,7 +1,6 @@
 {
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.autoSave": "afterDelay",
   "code-runner.runInTerminal": true,
   "python.showStartPage": false,
   "python.languageServer": "Pylance",
@@ -28,7 +27,7 @@
   "vscode_vibrancy.theme": "Default Dark",
   "workbench.startupEditor": "newUntitledFile",
   "glassit-linux.opacity": 20,
-  "editor.fontFamily": "Cascadia Code, Twemoji",
+  "editor.fontFamily": "Cascadia Code",
   "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
@@ -45,12 +44,10 @@
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Monokai Dimmed",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
-  "foam.openDailyNote.filenameFormat": "yyyy-mm-dd h:MM:ss tt",
-  "foam.openDailyNote.titleFormat": "yyyy-mm-dd h:MM:ss tt",
   "window.titleBarStyle": "custom",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.size": "fill",
@@ -74,20 +71,31 @@
   "zenMode.hideLineNumbers": false,
   "editor.cursorSurroundingLines": 6,
   "markdown-links.graphType": "obsidian",
-  "markless.horizontalRule": false,
-  "markless.list": false,
-  "errorLens.gutterIconsEnabled": true,
-  "errorLens.gutterIconSet": "defaultOutline",
-  "errorLens.gutterIconSize": "auto",
   "workbench.experimental.layoutControl.enabled": true,
   "window.menuBarVisibility": "toggle",
   "breadcrumbs.filePath": "last",
-  "markless.inlineImage.autoPreview": false,
-  "markless.inlineImage.enabled": false,
+  "todo-tree.highlights.useColourScheme": true,
+  "spellright.notificationClass": "warning",
+  "spellright.suggestionsInHints": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX"
+  ],
   "markless.hoverImage": false,
-  "markless.inlineCode": false,
-  "markless.latex": false,
   "markless.table": false,
+  "markless.inlineCode": false,
   "workbench.activityBar.visible": false,
-  "todo-tree.highlights.useColourScheme": true
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSize": "30%",
+  "errorLens.gutterIconSet": "circle",
+  "markless.html": false,
+  "markless.mermaid": false,
+  "markless.inlineImage.autoPreview": false,
+  "latex-utilities.liveReformat.enabled": true,
+  "settingsSync.keybindingsPerPlatform": false,
+  "gitProjectManager.maxDepthRecursion": 1,
+  "files.autoSave": "afterDelay"
 }
