@@ -21,6 +21,7 @@ Managed using yadm. Screenshots are outdated because i'm lazy.
   - Modified the ChromeOS theme's window decoration, to match terminal theme
 - Latte dock
   - honestly i'm not even sure if that's the right file
+- VSCode
 
 ## Not included configs
 - Font:
@@ -31,3 +32,6 @@ Managed using yadm. Screenshots are outdated because i'm lazy.
 ## TODO
 - [ ] even more screenshots
 - [ ] more KDE configs
+- [ ] firefox
+  - how do you sync between different profiles??
+- GNOME
