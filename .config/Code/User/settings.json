@@ -27,7 +27,7 @@
   "vscode_vibrancy.theme": "Default Dark",
   "workbench.startupEditor": "newUntitledFile",
   "glassit-linux.opacity": 20,
-  "editor.fontFamily": "Cascadia Code",
+  "editor.fontFamily": "Cascadia Code semibold",
   "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
@@ -40,11 +40,10 @@
   "editor.formatOnType": true,
   "dart.closingLabels": false,
   "editor.lineHeight": 24,
-  "editor.fontSize": 13,
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Andromeda",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
@@ -97,5 +96,19 @@
   "latex-utilities.liveReformat.enabled": true,
   "settingsSync.keybindingsPerPlatform": false,
   "gitProjectManager.maxDepthRecursion": 1,
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.profiles.linux": {
+    "fish": {
+      "path": "/usr/bin/env",
+      "args": [
+        "--",
+        "flatpak-spawn",
+        "--host",
+        "--env=TERM=xterm-256color",
+        "toolbox",
+        "enter"
+      ]
+    }
+  }
 }
