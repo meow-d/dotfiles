@@ -22,6 +22,8 @@ Managed using yadm. Screenshots are outdated because i'm lazy.
 - Latte dock
   - honestly i'm not even sure if that's the right file
 - VSCode
+- MPV video player
+  - lua script by 
 
 ## Not included configs
 - Font:
