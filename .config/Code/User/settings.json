@@ -16,12 +16,11 @@
   "gitlens.views.lineHistory.location": "gitlens",
   "gitlens.views.compare.location": "gitlens",
   "gitlens.views.search.location": "gitlens",
-  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "python.autoComplete.addBrackets": true,
   "tabnine.experimentalAutoImports": true,
   "glassit.alpha": 240,
   "python.analysis.completeFunctionParens": true,
-  "python.formatting.provider": "black",
   "editor.formatOnSave": true,
   "terminal.integrated.rendererType": "dom",
   "vscode_vibrancy.theme": "Default Dark",
@@ -30,7 +29,8 @@
   "editor.fontFamily": "Cascadia Code semibold",
   "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.svg": "default"
   },
   "explorer.confirmDelete": false,
   "git.confirmSync": false,
@@ -43,15 +43,10 @@
   "dart.env": {
     "CHROME_EXCUTABLE": "/usr/bin/google-chrome-stable"
   },
-  "workbench.colorTheme": "Andromeda",
+  "workbench.colorTheme": "Quiet Light",
   "gitProjectManager.baseProjectsFolders": [
     "~/nerd-stuff"
   ],
-  "window.titleBarStyle": "custom",
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.size": "fill",
-  "editor.minimap.maxColumn": 80,
-  "editor.minimap.enabled": false,
   "markdown.extension.italic.indicator": "_",
   "ltex.disabledRules": {
     "en-GB": [
@@ -63,35 +58,22 @@
   "terminal.integrated.fontWeight": "600",
   "editor.linkedEditing": true,
   "files.trimTrailingWhitespace": true,
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
+  "[markdown]": {},
   "workbench.iconTheme": "material-icon-theme",
   "zenMode.hideLineNumbers": false,
   "editor.cursorSurroundingLines": 6,
-  "markdown-links.graphType": "obsidian",
   "workbench.experimental.layoutControl.enabled": true,
-  "window.menuBarVisibility": "toggle",
   "breadcrumbs.filePath": "last",
   "todo-tree.highlights.useColourScheme": true,
   "spellright.notificationClass": "warning",
   "spellright.suggestionsInHints": false,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX"
-  ],
   "markless.hoverImage": false,
   "markless.table": false,
   "markless.inlineCode": false,
-  "workbench.activityBar.visible": false,
   "errorLens.gutterIconsEnabled": true,
   "errorLens.gutterIconSize": "30%",
   "errorLens.gutterIconSet": "circle",
   "markless.html": false,
-  "markless.mermaid": false,
   "markless.inlineImage.autoPreview": false,
   "latex-utilities.liveReformat.enabled": true,
   "settingsSync.keybindingsPerPlatform": false,
@@ -99,7 +81,7 @@
   "files.autoSave": "afterDelay",
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.profiles.linux": {
-    "fish": {
+    "fish toolbox": {
       "path": "/usr/bin/env",
       "args": [
         "--",
@@ -109,6 +91,47 @@
         "toolbox",
         "enter"
       ]
+    },
+    "fish host": {
+      "path": "/usr/bin/env",
+      "args": [
+        "--",
+        "flatpak-spawn",
+        "--host",
+        "--env=TERM=xterm-256color",
+        "fish"
+      ]
     }
-  }
+  },
+  "window.menuBarVisibility": "toggle",
+  "gitdoc.autoCommitDelay": 60000,
+  "gitdoc.autoPullDelay": 60000,
+  "gitdoc.autoPushDelay": 60000,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "window.titleBarStyle": "custom",
+  "python.defaultInterpreterPath": "python3",
+  "python.formatting.provider": "black",
+  "markdown-links.graphType": "obsidian",
+  "settingsSync.ignoredSettings": [
+    "terminal.integrated.defaultProfile.linux"
+  ],
+  "excalidraw.theme": "light",
+  "git.autofetch": true,
+  "workbench.activityBar.visible": false,
+  "editor.find.autoFindInSelection": "multiline",
+  "keyboard.dispatch": "keyCode",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 60,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX"
+  ],
+  "markless.mermaid": false,
+  "aws.telemetry": false,
+  "markdown-word-count.selectionCount": true,
+  "editor.renderWhitespace": "trailing"
 }
