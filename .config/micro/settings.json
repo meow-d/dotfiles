@@ -1,6 +1,6 @@
 {
     "autosu": true,
-    "colorscheme": "atom-dark-transparent",
+    "colorscheme": "catppuccin-latte",
     "divchars": "│─",
     "filemanager-openonstart": true,
     "filemanager-showignored": false,

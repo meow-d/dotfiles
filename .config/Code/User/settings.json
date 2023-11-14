@@ -35,7 +35,6 @@
   "explorer.confirmDelete": false,
   "git.confirmSync": false,
   "editor.fontLigatures": "'ss01','cv01','cv02','ss05'",
-  "workbench.productIconTheme": "icons-carbon",
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnType": true,
   "dart.closingLabels": false,
@@ -61,7 +60,6 @@
   "[markdown]": {},
   "workbench.iconTheme": "material-icon-theme",
   "zenMode.hideLineNumbers": false,
-  "editor.cursorSurroundingLines": 6,
   "workbench.experimental.layoutControl.enabled": true,
   "breadcrumbs.filePath": "last",
   "todo-tree.highlights.useColourScheme": true,
@@ -79,7 +77,6 @@
   "settingsSync.keybindingsPerPlatform": false,
   "gitProjectManager.maxDepthRecursion": 1,
   "files.autoSave": "afterDelay",
-  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.profiles.linux": {
     "fish toolbox": {
       "path": "/usr/bin/env",
@@ -118,7 +115,6 @@
   ],
   "excalidraw.theme": "light",
   "git.autofetch": true,
-  "workbench.activityBar.visible": false,
   "editor.find.autoFindInSelection": "multiline",
   "keyboard.dispatch": "keyCode",
   "editor.minimap.renderCharacters": false,
@@ -133,5 +129,30 @@
   "markless.mermaid": false,
   "aws.telemetry": false,
   "markdown-word-count.selectionCount": true,
-  "editor.renderWhitespace": "trailing"
+  "editor.renderWhitespace": "trailing",
+  "window.restoreWindows": "one",
+  "window.newWindowDimensions": "maximized",
+  "files.insertFinalNewline": true,
+  "editor.cursorSurroundingLines": 6,
+  "php.executablePath": "/opt/lampp/bin/php",
+  "php.validate.executablePath": "/opt/lampp/bin/php",
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "php.completion.parameters": "parameters",
+  "css.enabledLanguages": [
+    "php",
+    "html"
+  ],
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.graph.layout": "editor",
+  "editor.minimap.autohide": true,
+  "workbench.statusBar.visible": false,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.ignoreRebaseWarning": true,
+  "workbench.activityBar.location": "hidden",
+  "window.zoomLevel": 1,
 }
