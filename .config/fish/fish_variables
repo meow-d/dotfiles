@@ -9,7 +9,7 @@ SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR --export __ABBR_TIPS_KEYS:a__ls\x1e\x2dadd\x1ea__\x2dl\x1ea__\x2d\x2dhelp\x1ea__\x1ea__\x1ea__\x1ea__\x1ea__ls\x1ea__ls\x1ea__\x2dh\x1ea__
-SETUVAR --export __ABBR_TIPS_VALUES:exa\x20\x2d\x2dicons\x1els\x20\x22exa\x20\x2d\x2dicons\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e
+SETUVAR --export __ABBR_TIPS_VALUES:exa\x20\x2d\x2dicons\x1els\x20\x22exa\x20\x2d\x2dicons\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e\x1e
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_f:flatpak
 SETUVAR _fish_abbr_fi:flatpak\x20install
