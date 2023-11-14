@@ -1,0 +1,98 @@
+# Kitty's website for config options:
+# https://sw.kovidgoyal.net/kitty/conf
+
+
+###########
+# Display #
+###########
+# font
+font_family      Sauce Code Pro Semibold Nerd Font Complete Mono
+bold_font        Sauce Code Pro Bold Nerd Font Complete Mono
+italic_font      Sauce Code Pro Semibold Italic Nerd Font Complete Mono
+bold_italic_font Sauce Code Pro Bold Italic Nerd Font Complete Mono
+font_size        12.0
+
+sync_to_monitor yes
+
+# cursor
+cursor_shape beam
+
+# window
+wayland_titlebar_color black
+remember_window_size  no
+initial_window_width  110c
+initial_window_height 26c
+window_border_width   0pt
+
+background_opacity    0.8
+
+# Tab bar
+tab_bar_edge          bottom
+tab_bar_style         powerline
+tab_powerline_style   slanted
+tab_title_template    {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
+
+active_tab_font_style bold
+active_tab_foreground #000
+inactive_tab_font_style normal
+inactive_tab_foreground #555
+inactive_tab_background #999
+
+
+#####################
+# Notification bell #
+#####################
+window_alert_on_bell yes
+bell_on_tab          " "
+command_on_bell      notify-send '🔔 Terminal bell' 'Check your terminal!' --icon=utilities-terminal
+enable_audio_bell    no
+
+
+###############
+# Keybindings #
+###############
+# New tab without shift
+map ctrl+t new_tab
+
+
+########
+# Misc #
+########
+# Disable shell intergration
+#no-prompt-mark
+
+# Paste
+strip_trailing_spaces smart
+
+# Browser
+open_url_with default
+
+#########
+# Theme #
+#########
+# Options: Base16 Bright, Base16 Atelier Cave, Monokai Soda
+# Dracula
+#background #1e1f28
+#color8 #545454
+background #000000
+foreground #f8f8f2
+cursor #bbbbbb
+selection_background #44475a
+color0 #000000
+color8 #666666
+color1 #ff5555
+color9 #ff5454
+color2 #50fa7b
+color10 #50fa7b
+color3 #f0fa8b
+color11 #f0fa8b
+color4 #bd92f8
+color12 #bd92f8
+color5 #ff78c5
+color13 #ff78c5
+color6 #8ae9fc
+color14 #8ae9fc
+color7 #bbbbbb
+color15 #ffffff
+selection_foreground #1e1f28
+
