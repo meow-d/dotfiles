@@ -30,11 +30,11 @@ abbr -a -- fu 'flatpak uninstall'
 abbr -a -- n micro
 abbr -a -- nn sudoedit
 abbr -a -- p paru
-abbr -a -- pi 'paru -dS'
-abbr -a -- pu 'paru -dR'
-abbr -a -- r rpm-dostree
-abbr -a -- ri 'rpm-dostree install'
-abbr -a -- ru 'rpm-dostree uninstall'
+abbr -a -- pi 'paru -S'
+abbr -a -- pu 'paru -R'
+abbr -a -- r rpm-ostree
+abbr -a -- ri 'rpm-ostree install'
+abbr -a -- ru 'rpm-ostree uninstall'
 abbr -a -- s sudo
 abbr -a -- za 'zoxide add'
 abbr -a -- zq 'zoxide query'
