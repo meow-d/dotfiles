@@ -21,23 +21,19 @@ end
 
 
 ### Init
-zoxide init fish | source
+zoxide init fish --cmd cd | source
 starship init fish | source
-abbr -a -- f flatpak
-abbr -a -- fi 'flatpak install'
-abbr -a -- fs 'flatpak search'
-abbr -a -- fu 'flatpak uninstall'
-abbr -a -- n micro
-abbr -a -- nn sudoedit
-abbr -a -- p paru
-abbr -a -- pi 'paru -S'
-abbr -a -- pu 'paru -R'
-abbr -a -- r rpm-ostree
-abbr -a -- ri 'rpm-ostree install'
-abbr -a -- ru 'rpm-ostree uninstall'
-abbr -a -- s sudo
-abbr -a -- za 'zoxide add'
-abbr -a -- zq 'zoxide query'
-abbr -a -- zqi zoxide\ query\ \\x2di
-abbr -a -- zr 'zoxide remove'
-abbr -a -- di 'sudo dnf install -y'
+
+### abbr
+abbr --add s "sudo"
+abbr --add n "micro"
+abbr --add nn "sudoedit"
+abbr --add f "flatpak"
+abbr --add fi "flatpak install"
+abbr --add fs "flatpak search"
+abbr --add fu "flatpak uninstall"
+abbr --add r "rpm-ostree"
+abbr --add ri "rpm-ostree install"
+abbr --add ru "rpm-ostree uninstall"
+abbr --add di 'sudo dnf install -y'
+abbr --add xo 'xdg-open'
