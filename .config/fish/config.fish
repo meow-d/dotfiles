@@ -2,7 +2,6 @@
 bind \e\[3\;5~ kill-word
 bind \cH backward-kill-word
 
-
 ### Variables
 set -x LC_ALL "en_US.UTF-8"
 
@@ -32,7 +31,7 @@ abbr --add fi "flatpak install"
 abbr --add fs "flatpak search"
 abbr --add fu "flatpak uninstall"
 abbr --add r "rpm-ostree"
-abbr --add ri "rpm-ostree install"
+abbr --add --set-cursor ri "rpm-ostree install % && sudo rpm-ostree apply-live --allow-replacement"
 abbr --add ru "rpm-ostree uninstall"
 abbr --add di 'sudo dnf install -y'
 abbr --add xo 'xdg-open'
