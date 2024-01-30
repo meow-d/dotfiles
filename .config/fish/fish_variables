@@ -66,5 +66,5 @@ SETUVAR fish_pager_color_description:666
 SETUVAR fish_pager_color_prefix:\x2d\x2dunderline\x1e0AA
 SETUVAR fish_pager_color_progress:0AA
 SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d333
-SETUVAR fish_user_paths:/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
+SETUVAR fish_user_paths:/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
 SETUVAR zoxide_cmd:cd
