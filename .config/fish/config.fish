@@ -26,12 +26,22 @@ starship init fish | source
 abbr --add s "sudo"
 abbr --add n "micro"
 abbr --add nn "sudoedit"
+
+abbr --add xo "xdg-open"
+
 abbr --add f "flatpak"
 abbr --add fi "flatpak install"
 abbr --add fs "flatpak search"
 abbr --add fu "flatpak uninstall"
+
 abbr --add r "rpm-ostree"
 abbr --add --set-cursor ri "rpm-ostree install % && sudo rpm-ostree apply-live --allow-replacement"
 abbr --add ru "rpm-ostree uninstall"
-abbr --add di 'sudo dnf install -y'
-abbr --add xo 'xdg-open'
+
+abbr --add d "sudo dnf"
+abbr --add di "sudo dnf install -y"
+
+abbr --add g "git"
+abbr --add gs "git status"
+abbr --add gc "git checkout"
+abbr --add gb "git branch"
