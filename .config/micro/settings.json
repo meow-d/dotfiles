@@ -1,6 +1,6 @@
 {
     "autosu": true,
-    "colorscheme": "monokai",
+    "colorscheme": "monokai-dark-transparent",
     "divchars": "│─",
     "filemanager-openonstart": true,
     "filemanager-showignored": false,
