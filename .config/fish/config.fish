@@ -27,6 +27,8 @@ abbr --add s "sudo"
 abbr --add n "micro"
 abbr --add nn "sudoedit"
 
+abbr --add t "trash-put"
+
 abbr --add xo "xdg-open"
 
 abbr --add f "flatpak"
