@@ -45,5 +45,7 @@ abbr --add di "sudo dnf install -y"
 
 abbr --add g "git"
 abbr --add gs "git status"
+abbr --add --set-cursor gcm "git commit . -m \"%\""
 abbr --add gc "git checkout"
 abbr --add gb "git branch"
+abbr --add gm "git merge"
