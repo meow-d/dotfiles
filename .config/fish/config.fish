@@ -42,6 +42,7 @@ abbr --add ru "rpm-ostree uninstall"
 
 abbr --add d "sudo dnf"
 abbr --add di "sudo dnf install -y"
+abbr --add du "sudo dnf remove -y"
 
 abbr --add g "git"
 abbr --add gs "git status"
