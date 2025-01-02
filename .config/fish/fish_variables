@@ -14,8 +14,6 @@ SETUVAR --export UID:1000
 SETUVAR --export __ABBR_TIPS_KEYS:s\x1en\x1enn\x1ef\x1efi\x1efs\x1efu\x1er\x1eri\x1eru\x1edi\x1exo\x1ea__icat\x1ea__ls\x1e\x2dadd
 SETUVAR --export __ABBR_TIPS_VALUES:sudo\x1emicro\x1esudoedit\x1eflatpak\x1eflatpak\x20install\x1eflatpak\x20search\x1eflatpak\x20uninstall\x1erpm\x2dostree\x1erpm\x2dostree\x20install\x1erpm\x2dostree\x20uninstall\x1esudo\x20dnf\x20install\x20\x2dy\x1exdg\x2dopen\x1ekitty\x20\x2bkitten\x20icat\x1eeza\x20\x2d\x2dicons\x1esr\x20\x22sudo\x20rpm\x2dostree\x20apply\x2dlive\x20\x2d\x2dallow\x2dreplacement
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_d:sudo\x20dnf
-SETUVAR _fish_abbr_di:sudo\x20dnf\x20install\x20\x2dy
 SETUVAR _fish_abbr_f:flatpak
 SETUVAR _fish_abbr_fi:flatpak\x20install
 SETUVAR _fish_abbr_fs:flatpak\x20search
@@ -25,12 +23,11 @@ SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gc:git\x20checkout
 SETUVAR _fish_abbr_gm:git\x20merge
 SETUVAR _fish_abbr_gs:git\x20status
-SETUVAR _fish_abbr_n:micro
+SETUVAR _fish_abbr_n:hx
 SETUVAR _fish_abbr_nn:sudoedit
-SETUVAR _fish_abbr_r:rpm\x2dostree
-SETUVAR _fish_abbr_ri:rpm\x2dostree\x20install
-SETUVAR _fish_abbr_ru:rpm\x2dostree\x20uninstall
+SETUVAR _fish_abbr_rm:trash\x2dput
 SETUVAR _fish_abbr_s:sudo
+SETUVAR _fish_abbr_t:trash\x2dput
 SETUVAR _fish_abbr_xo:xdg\x2dopen
 SETUVAR _fisher_franciscolourenco_2F_done_files:/home/meow_d/\x2econfig/fish/conf\x2ed/done\x2efish
 SETUVAR _fisher_gazorby_2F_fish_2D_abbreviation_2D_tips_files:/home/meow_d/\x2econfig/fish/functions/__abbr_tips_bind_newline\x2efish\x1e/home/meow_d/\x2econfig/fish/functions/__abbr_tips_bind_space\x2efish\x1e/home/meow_d/\x2econfig/fish/functions/__abbr_tips_clean\x2efish\x1e/home/meow_d/\x2econfig/fish/functions/__abbr_tips_init\x2efish\x1e/home/meow_d/\x2econfig/fish/conf\x2ed/abbr_tips\x2efish
@@ -72,5 +69,5 @@ SETUVAR fish_pager_color_description:666
 SETUVAR fish_pager_color_prefix:\x2d\x2dunderline\x1e0AA
 SETUVAR fish_pager_color_progress:0AA
 SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d333
-SETUVAR fish_user_paths:/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
+SETUVAR fish_user_paths:/usr/local/cuda\x2d12\x2e6/bin\x1e/home/meow_d/bin\x1e/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
 SETUVAR zoxide_cmd:cd
