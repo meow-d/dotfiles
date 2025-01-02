@@ -1,0 +1,15 @@
+# theme
+theme = catppuccin-frappe
+
+# font
+font-family = "Mononoki Nerd Font"
+adjust-cell-height = "40%"
+
+# window
+window-width = "130"
+window-height = "25"
+
+window-decoration = "false"
+
+# keybinds
+keybind = ctrl+t=new_tab
