@@ -41,7 +41,7 @@ abbr --add fu "flatpak uninstall"
 
 if command -v rpm-ostree >/dev/null
     abbr --add d rpm-ostree
-    abbr --add --set-cursor di "rpm-ostree install % && sudo rpm-ostree apply-live --allow-replacement"
+    abbr --add di "rpm-ostree install -A"
     abbr --add du "rpm-ostree uninstall"
 else if command -v dnf >/dev/null
     abbr --add d "sudo dnf"
@@ -51,7 +51,7 @@ end
 
 abbr --add g git
 abbr --add gs "git status"
-abbr --add --set-cursor gcm "git commit . -m \"%\""
+abbr --add gcm "git commit . -m \"%\"" --set-cursor
 abbr --add gc "git checkout"
 abbr --add gb "git branch"
 abbr --add gm "git merge"
