@@ -3,7 +3,7 @@
     "logo": {
         "source": "~/.config/fastfetch/childe-lumine-cuddle_Sorane38.jpg",
         "type": "kitty",
-        "height": 15,
+        "height": 14,
         // "width": 33,
         "padding": {
             "top": 1,
@@ -20,7 +20,7 @@
 	{
             "type": "title",
             "color": {
-                "user": "32",  // = color2
+                "user": "32",
                 "at": "37",
                 "host": "32"
             }
@@ -30,9 +30,9 @@
             "type": "os",
             "key": "distro    ",
         },
-        {   "type": "packages",
-            "key": "packages  ",
-        },
+        // {   "type": "packages",
+        //     "key": "packages  ",
+        // },
         {
             "type": "shell",
             "key": "shell     ",
@@ -62,11 +62,11 @@
             "type": "disk",
             "key": "disk      ",
         },
-        {
-            "type": "media",
-            "key": "󰝚         ",
-            "keyColor": "34", 
-        },
+        // {
+        //     "type": "media",
+        //     "key": "󰝚         ",
+        //     "keyColor": "34", 
+        // },
         "break",
         {
             "type": "colors",
