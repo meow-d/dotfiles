@@ -47,6 +47,10 @@ else if command -v dnf >/dev/null
     abbr --add d "sudo dnf"
     abbr --add di "sudo dnf install -y"
     abbr --add du "sudo dnf remove -y"
+else if command -v apt >/dev/null
+    abbr --add d "sudo apt"
+    abbr --add di "sudo apt install -y"
+    abbr --add du "sudo apt remove -y"
 end
 
 abbr --add g git
