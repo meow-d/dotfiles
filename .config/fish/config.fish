@@ -28,6 +28,7 @@ starship init fish | source
 abbr --add s sudo
 abbr --add n $VISUAL
 abbr --add nn sudoedit
+abbr --add vim nvim
 
 abbr --add rm trash-put
 abbr --add t trash-put
