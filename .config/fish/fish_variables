@@ -22,6 +22,7 @@ SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gc:git\x20checkout
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2e\x20\x2dm\x20\x22\x25\x22\x20\x2d\x2dset\x2dcursor
+SETUVAR _fish_abbr_gcn:git\x20add\x20\x2e\x20\x26\x26\x20git\x20commit\x20\x2da\x20\x2d\x2dno\x2dedit\x20\x2d\x2dallow\x2dempty\x2dmessage\x20\x26\x26\x20git\x20push
 SETUVAR _fish_abbr_gm:git\x20merge
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_n:hx
