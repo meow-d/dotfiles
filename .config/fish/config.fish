@@ -28,6 +28,7 @@ starship init fish | source
 abbr --add s sudo
 abbr --add n $VISUAL
 abbr --add nn sudoedit
+abbr --add vim nvim
 
 abbr --add rm trash-put
 abbr --add t trash-put
@@ -47,6 +48,10 @@ else if command -v dnf >/dev/null
     abbr --add d "sudo dnf"
     abbr --add di "sudo dnf install -y"
     abbr --add du "sudo dnf remove -y"
+else if command -v apt >/dev/null
+    abbr --add d "sudo apt"
+    abbr --add di "sudo apt install -y"
+    abbr --add du "sudo apt remove -y"
 end
 
 abbr --add g git
