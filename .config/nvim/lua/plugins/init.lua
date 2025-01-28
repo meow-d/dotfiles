@@ -15,19 +15,50 @@ return {
   {
     'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
+    ft = { "markdown" },
     opts = {
       render_modes = true,
-      file_types = {"markdown"},
+      file_types = { "markdown" },
       heading = {
-        render_modes = false,
-        border = true
+        -- border = true,
+        sign = true,
       }
     },
-    ft = {"markdown"}
   },
 
   {
-    'renerocksai/telekasten.nvim',
-    dependencies = {'nvim-telescope/telescope.nvim'}
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    ft = "markdown",
+    cond = vim.fn.getcwd() == vim.fn.expand("~/nerd-stuff/notes"),
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "hrsh7th/nvim-cmp",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      ui = { enable = false },
+      workspaces = {
+        {
+          name = "notes",
+          path = "~/nerd-stuff/notes"
+        }
+      },
+      daily_notes = {
+        folder = "./journal"
+      }
+    },
   },
+
+  {
+    "tpope/vim-surround",
+    lazy = false,
+  }
+  -- {
+  --   'renerocksai/telekasten.nvim',
+  --   dependencies = { 'nvim-telescope/telescope.nvim' },
+  --   lazy = false,
+  -- },
 }
