@@ -8,8 +8,8 @@ set -x LC_ALL "en_US.UTF-8"
 set fish_greeting
 set -x STARSHIP_LOG error
 
-set -x VISUAL hx
-set -x EDITOR hx
+set -x VISUAL nvim
+set -x EDITOR $VISUAL
 fish_add_path $HOME/.local/bin
 
 
@@ -56,7 +56,7 @@ end
 
 abbr --add g git
 abbr --add gs "git status"
-abbr --add gcm "git commit . -m \"%\"" --set-cursor
+abbr --add gcm --set-cursor "git commit . -m \"%\""
 abbr --add gcn "git add . && git commit -a --no-edit --allow-empty-message && git push"
 abbr --add gc "git checkout"
 abbr --add gb "git branch"
