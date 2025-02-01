@@ -35,6 +35,7 @@ abbr --add t trash-put
 
 abbr --add xo xdg-open
 
+## packages
 abbr --add f flatpak
 abbr --add fi "flatpak install"
 abbr --add fs "flatpak search"
@@ -54,13 +55,25 @@ else if command -v apt >/dev/null
     abbr --add du "sudo apt remove -y"
 end
 
+## git
 abbr --add g git
 abbr --add gs "git status"
+
+abbr --add ga "git add"
+abbr --add gc "git commit"
 abbr --add gcm --set-cursor "git commit -m \"%\""
 abbr --add gcn "git add . && git commit -a --no-edit --allow-empty-message && git push"
-abbr --add gc "git checkout"
+
+abbr --add gsw "git switch"
 abbr --add gb "git branch"
 abbr --add gm "git merge"
+abbr --add gri "git rebase -i"
+
+abbr --add gl "git log"
+abbr --add gsh "git show"
+
+abbr --add gst "git stash"
+abbr --add gstp "git stash pop"
 
 ### pnpm
 set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
