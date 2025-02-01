@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre',
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
 
@@ -13,8 +13,8 @@ return {
   },
 
   {
-    'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
     ft = { "markdown" },
     opts = {
       render_modes = true,
@@ -22,7 +22,7 @@ return {
       heading = {
         -- border = true,
         sign = true,
-      }
+      },
     },
   },
 
@@ -30,7 +30,7 @@ return {
     "epwalsh/obsidian.nvim",
     version = "*",
     ft = "markdown",
-    cond = vim.fn.getcwd() == vim.fn.expand("~/nerd-stuff/notes"),
+    cond = vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes",
     lazy = false,
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -43,22 +43,26 @@ return {
       workspaces = {
         {
           name = "notes",
-          path = "~/nerd-stuff/notes"
-        }
+          path = "~/nerd-stuff/notes",
+        },
       },
       daily_notes = {
-        folder = "./journal"
-      }
+        folder = "./journal",
+      },
     },
   },
 
   {
     "tpope/vim-surround",
     lazy = false,
-  }
-  -- {
-  --   'renerocksai/telekasten.nvim',
-  --   dependencies = { 'nvim-telescope/telescope.nvim' },
-  --   lazy = false,
-  -- },
+  },
+
+  {
+    "nvim-telescope/telescope-frecency.nvim",
+    -- install the latest stable version
+    version = "*",
+    config = function()
+      require("telescope").load_extension "frecency"
+    end,
+  },
 }

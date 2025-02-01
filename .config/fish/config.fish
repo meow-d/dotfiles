@@ -56,7 +56,7 @@ end
 
 abbr --add g git
 abbr --add gs "git status"
-abbr --add gcm --set-cursor "git commit . -m \"%\""
+abbr --add gcm --set-cursor "git commit -m \"%\""
 abbr --add gcn "git add . && git commit -a --no-edit --allow-empty-message && git push"
 abbr --add gc "git checkout"
 abbr --add gb "git branch"
