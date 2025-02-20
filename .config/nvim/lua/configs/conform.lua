@@ -10,6 +10,7 @@ local options = {
     javascriptreact = { "prettier" },
     typesrcipt = { "prettier" },
     typescriptreact = { "prettier" },
+    go = { "gofmt" },
   },
 
   format_on_save = {
