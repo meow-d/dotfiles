@@ -14,3 +14,4 @@ window-decoration = none
 
 # keybinds
 keybind = ctrl+t=new_tab
+keybind = ctrl+shift+j=unbind
