@@ -11,6 +11,7 @@ set -x STARSHIP_LOG error
 set -x VISUAL nvim
 set -x EDITOR $VISUAL
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/go/bin
 
 
 ### Functions
@@ -69,7 +70,7 @@ abbr --add gb "git branch"
 abbr --add gm "git merge"
 abbr --add gri "git rebase -i"
 
-abbr --add gl "git log"
+abbr --add gl "git l"
 abbr --add gsh "git show"
 
 abbr --add gst "git stash"
