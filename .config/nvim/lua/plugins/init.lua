@@ -46,7 +46,6 @@ return {
           else
             vim.g.copilot_enabled = 1
           end
-          print(cwd .. " " .. home .. "/nerd-stuff/notes" .. " " .. vim.g.copilot_enabled)
         end,
       })
     end,
