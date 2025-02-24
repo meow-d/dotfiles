@@ -9,7 +9,22 @@ o.wildmode = "longest,list,full"
 o.wildmenu = true
 o.relativenumber = true
 g.editorconfig = true
+o.breakindent = true
 
+-- bullets.vim
+g.bullets_set_mappings = 0
+g.bullets_custom_mappings = {
+  { "imap", "<cr>", "<Plug>(bullets-newline)" },
+  { "inoremap", "<C-cr>", "<cr>" },
+  { "nmap", "o", "<Plug>(bullets-newline)" },
+
+  { "nmap", ">>", "<Plug>(bullets-demote)" },
+  { "vmap", ">", "<Plug>(bullets-demote)" },
+  { "nmap", "<<", "<Plug>(bullets-promote)" },
+  { "vmap", "<", "<Plug>(bullets-promote)" },
+}
+
+-- neovide
 if g.neovide then
   g.neovide_fullscreen = false
   o.guifont = "Mononoki Nerd Font:h13"

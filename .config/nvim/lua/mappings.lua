@@ -32,3 +32,6 @@ map("n", "<Esc>", function()
     mc.enableCursors()
   end
 end)
+
+-- bullets.vim
+map({ "n", "v", "i" }, "<A-c>", "<Plug>(bullets-toggle-checkbox)")

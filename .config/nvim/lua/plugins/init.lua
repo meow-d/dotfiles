@@ -75,6 +75,12 @@ return {
   },
 
   {
+    "bullets-vim/bullets.vim",
+    ft = { "markdown" },
+    -- see options.lua and mappings.lua for config
+  },
+
+  {
     "epwalsh/obsidian.nvim",
     version = "*",
     ft = "markdown",
