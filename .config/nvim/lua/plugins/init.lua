@@ -40,11 +40,13 @@ return {
       vim.api.nvim_create_autocmd("VimEnter", {
         callback = function()
           local cwd = vim.fn.getcwd()
-          if cwd:match("^" .. vim.fn.expand "~/nerd-stuff/notes") then
+          local home = vim.loop.os_homedir()
+          if cwd:match(home .. "/nerd%-stuff/notes") then
             vim.g.copilot_enabled = 0
           else
             vim.g.copilot_enabled = 1
           end
+          print(cwd .. " " .. home .. "/nerd-stuff/notes" .. " " .. vim.g.copilot_enabled)
         end,
       })
     end,
@@ -87,7 +89,6 @@ return {
     },
     opts = {
       ui = { enable = false },
-      disable_frontmatter = true,
       workspaces = {
         {
           name = "notes",
