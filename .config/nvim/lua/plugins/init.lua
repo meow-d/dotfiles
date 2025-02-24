@@ -40,6 +40,7 @@ return {
     },
     opts = {
       ui = { enable = false },
+      disable_frontmatter = true,
       workspaces = {
         {
           name = "notes",
