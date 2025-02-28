@@ -100,8 +100,13 @@ return {
           path = "~/nerd-stuff/notes",
         },
       },
+      notes_subdir = "notes",
       daily_notes = {
         folder = "./journal",
+        template = "daily-note.md",
+      },
+      templates = {
+        folder = "./.obsidian-nvim-templates",
       },
     },
   },
