@@ -13,8 +13,6 @@ return {
     end,
   },
 
-  -- { "mfussenegger/nvim-dap" },
-
   -- editing
   {
     "echasnovski/mini.surround",
@@ -52,6 +50,15 @@ return {
   },
 
   -- navigation
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        winblend = 30,
+      },
+    },
+  },
+
   {
     "nvim-telescope/telescope-frecency.nvim",
     version = "*",

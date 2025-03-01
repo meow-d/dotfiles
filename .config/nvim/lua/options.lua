@@ -12,6 +12,7 @@ g.editorconfig = true
 o.breakindent = true
 
 -- bullets.vim
+g.bullets_checkbox_markers = " -x"
 g.bullets_set_mappings = 0
 g.bullets_custom_mappings = {
   { "imap", "<cr>", "<Plug>(bullets-newline)" },
