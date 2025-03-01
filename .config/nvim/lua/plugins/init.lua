@@ -38,7 +38,8 @@ return {
       vim.api.nvim_create_autocmd("VimEnter", {
         callback = function()
           local cwd = vim.fn.getcwd()
-          if cwd:match("^" .. vim.fn.expand "~/nerd-stuff/notes") then
+          local home = vim.loop.os_homedir()
+          if cwd:match(home .. "/nerd%-stuff/notes") then
             vim.g.copilot_enabled = 0
           else
             vim.g.copilot_enabled = 1
@@ -81,6 +82,12 @@ return {
   },
 
   {
+    "bullets-vim/bullets.vim",
+    ft = { "markdown" },
+    -- see options.lua and mappings.lua for config
+  },
+
+  {
     "epwalsh/obsidian.nvim",
     version = "*",
     ft = "markdown",
@@ -100,8 +107,13 @@ return {
           path = "~/nerd-stuff/notes",
         },
       },
+      notes_subdir = "notes",
       daily_notes = {
         folder = "./journal",
+        template = "daily-note.md",
+      },
+      templates = {
+        folder = "./.obsidian-nvim-templates",
       },
     },
   },
