@@ -11,6 +11,7 @@ local options = {
     typesrcipt = { "prettier" },
     typescriptreact = { "prettier" },
     go = { "gofmt" },
+    cpp = { "clang-format" },
   },
 
   format_on_save = {
