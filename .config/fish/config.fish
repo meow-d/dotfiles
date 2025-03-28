@@ -13,7 +13,7 @@ set -x EDITOR $VISUAL
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
-
+fish_add_path $HOME/.config/herd-lite/bin
 
 ### Functions
 # auto ls when change directory
