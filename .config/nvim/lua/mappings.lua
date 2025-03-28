@@ -21,7 +21,7 @@ map({ "n", "x" }, "<leader>n", function()
   mc.matchAddCursor(1)
 end)
 
-map({ "n", "x" }, "c-s-l", mc.matchAllAddCursors)
+map({ "n", "x" }, "<c-s-l>", mc.matchAllAddCursors)
 
 map("n", "<Esc>", function()
   if not mc.cursorsEnabled() then
