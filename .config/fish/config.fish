@@ -15,6 +15,8 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
 fish_add_path $HOME/.config/herd-lite/bin
 
+mise activate fish | source
+
 ### Functions
 # auto ls when change directory
 function list_dir --on-variable PWD
