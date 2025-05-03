@@ -1,7 +1,5 @@
 require "nvchad.options"
 
--- add yours here!
-
 local o = vim.o
 local g = vim.g
 o.cursorlineopt = "both"
