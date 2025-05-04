@@ -1,37 +1,37 @@
--- This file needs to have same structure as nvconfig.lua 
+-- This file needs to have same structure as nvconfig.lua
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
--- Please read that file to know all available options :( 
+-- Please read that file to know all available options :(
 
 ---@type ChadrcConfig
 local M = {}
 
 M.base46 = {
-	theme = "tokyonight",
+  theme = "blossom_light",
 
-	hl_override = {
-		Comment = { italic = true },
-		["@comment"] = { italic = true },
-    },
-	hl_add = {
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+  },
+  hl_add = {
     RenderMarkdownH1Bg = {
-      bg = "#2d344e"
+      bg = "#eeeeee",
     },
     RenderMarkdownH2Bg = {
-      bg = "#373640"
+      bg = "#eeeeee",
     },
     RenderMarkdownH3Bg = {
-      bg = "#303940"
+      bg = "#eeeeee",
     },
     RenderMarkdownH4Bg = {
-      bg = "#233745"
+      bg = "#eeeeee",
     },
     RenderMarkdownH5Bg = {
-      bg = "#33334e"
+      bg = "#eeeeee",
     },
     RenderMarkdownH6Bg = {
-      bg = "#30304b"
+      bg = "#eeeeee",
     },
-	},
+  },
 }
 
 -- M.nvdash = { load_on_startup = true }
