@@ -114,6 +114,7 @@ return {
       },
       templates = {
         folder = "./.obsidian-nvim-templates",
+        date_format = "%A, %B %d, %Y",
       },
     },
   },
