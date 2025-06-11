@@ -13,7 +13,7 @@ SETUVAR --export SHELL:/usr/bin/fish
 SETUVAR --export UID:1000
 SETUVAR --export __ABBR_TIPS_KEYS:s\x1en\x1enn\x1ef\x1efi\x1efs\x1efu\x1er\x1eri\x1eru\x1edi\x1exo\x1ea__icat\x1ea__ls\x1e\x2dadd\x1ep\x1esudo\x1e\x22sudo
 SETUVAR --export __ABBR_TIPS_VALUES:sudo\x1emicro\x1esudoedit\x1eflatpak\x1eflatpak\x20install\x1eflatpak\x20search\x1eflatpak\x20uninstall\x1erpm\x2dostree\x1erpm\x2dostree\x20install\x1erpm\x2dostree\x20uninstall\x1esudo\x20dnf\x20install\x20\x2dy\x1exdg\x2dopen\x1ekitty\x20\x2bkitten\x20icat\x1eeza\x20\x2d\x2dicons\x1esr\x20\x22sudo\x20rpm\x2dostree\x20apply\x2dlive\x20\x2d\x2dallow\x2dreplacement\x1epodman\x20\x1ep\x20\x2d\x2dcommand\x20sudo\x20podman\x1ep\x22\x20\x22sudo\x20podman
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_f:flatpak
 SETUVAR _fish_abbr_fi:flatpak\x20install
 SETUVAR _fish_abbr_fs:flatpak\x20search
