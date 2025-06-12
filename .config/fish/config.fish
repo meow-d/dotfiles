@@ -15,7 +15,9 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
 fish_add_path $HOME/.local/lib/dart-sdk/bin
 
-mise activate fish | source
+if command -v mise >/dev/null
+  mise activate fish | source
+end
 
 ### Functions
 # auto ls when change directory

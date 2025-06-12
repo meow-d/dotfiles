@@ -9,8 +9,11 @@ o.relativenumber = true
 g.editorconfig = true
 o.breakindent = true
 
+o.autowriteall = true
+
 -- bullets.vim
 g.bullets_checkbox_markers = " -x"
+g.bullets_outline_levels = { "std-" }
 g.bullets_set_mappings = 0
 g.bullets_custom_mappings = {
   { "imap", "<cr>", "<Plug>(bullets-newline)" },

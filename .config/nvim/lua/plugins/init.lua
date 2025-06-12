@@ -32,6 +32,11 @@ return {
   },
 
   {
+    "pocco81/auto-save.nvim",
+    lazy = false,
+  },
+
+  {
     "github/copilot.vim",
     lazy = false,
     config = function()

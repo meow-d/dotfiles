@@ -5,6 +5,7 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader>ff", ":Telescope frecency workspace=CWD <CR>")
 map("n", "<s-u>", "<c-r>", { desc = "redo" })
+map("i", "<c-s>", "<c-o>:w<cr>", { desc = "save file" })
 
 -- multicursor
 local mc = require "multicursor-nvim"
