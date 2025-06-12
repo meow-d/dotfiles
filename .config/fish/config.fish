@@ -55,6 +55,10 @@ else if command -v dnf >/dev/null
     abbr --add d "sudo dnf"
     abbr --add di "sudo dnf install -y"
     abbr --add du "sudo dnf remove -y"
+else if command -v pkg >/dev/null
+    abbr --add d "pkg"
+    abbr --add di "pkg install -y"
+    abbr --add du "pkg uninstall -y"
 else if command -v apt >/dev/null
     abbr --add d "sudo apt"
     abbr --add di "sudo apt install -y"
