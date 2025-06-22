@@ -64,6 +64,7 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_features:no\x2dkeyboard\x2dprotocols
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_background:\x1d
@@ -79,5 +80,5 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/var/home/meow_d/Android/Sdk/platform\x2dtools\x1e/var/home/meow_d/\x2epub\x2dcache/bin\x1e/var/home/meow_d/\x2econfig/herd\x2dlite/bin\x1e/var/home/meow_d/Android/cmdline\x2dtools/latest/bin\x1e/var/home/meow_d/\x2elocal/lib/android_sdk/cmdline\x2dtools/latest/cmdline\x2dtools/latest/bin\x1e/var/home/meow_d/\x2elocal/lib/android_sdk/cmdline\x2dtools/bin\x1e/var/home/meow_d/\x2elocal/lib/flutter/bin\x1e/home/meow_d/go/bin\x1e/usr/local/cuda\x2d12\x2e6/bin\x1e/home/meow_d/bin\x1e/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
+SETUVAR fish_user_paths:/data/data/com\x2etermux/files/home/\x2elocal/bin\x1e/var/home/meow_d/Android/Sdk/platform\x2dtools\x1e/var/home/meow_d/\x2epub\x2dcache/bin\x1e/var/home/meow_d/\x2econfig/herd\x2dlite/bin\x1e/var/home/meow_d/Android/cmdline\x2dtools/latest/bin\x1e/var/home/meow_d/\x2elocal/lib/android_sdk/cmdline\x2dtools/latest/cmdline\x2dtools/latest/bin\x1e/var/home/meow_d/\x2elocal/lib/android_sdk/cmdline\x2dtools/bin\x1e/var/home/meow_d/\x2elocal/lib/flutter/bin\x1e/home/meow_d/go/bin\x1e/usr/local/cuda\x2d12\x2e6/bin\x1e/home/meow_d/bin\x1e/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2elocal/podman/bin\x1e/var/home/meow_d/\x2elocal/bin\x1e/var/home/meow_d/\x2ecargo/bin\x1e/home/purecatprsn/\x2elocal/bin
 SETUVAR zoxide_cmd:cd
