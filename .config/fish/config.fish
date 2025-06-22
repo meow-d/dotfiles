@@ -47,14 +47,14 @@ abbr --add fi "flatpak install"
 abbr --add fs "flatpak search"
 abbr --add fu "flatpak uninstall"
 
-if command -v rpm-ostree >/dev/null
-    abbr --add d rpm-ostree
-    abbr --add di "rpm-ostree install -A"
-    abbr --add du "rpm-ostree uninstall"
-else if command -v dnf >/dev/null
+if command -v dnf >/dev/null
     abbr --add d "sudo dnf"
     abbr --add di "sudo dnf install -y"
     abbr --add du "sudo dnf remove -y"
+else if command -v rpm-ostree >/dev/null
+    abbr --add d rpm-ostree
+    abbr --add di "rpm-ostree install -A"
+    abbr --add du "rpm-ostree uninstall"
 else if command -v pkg >/dev/null
     abbr --add d "pkg"
     abbr --add di "pkg install -y"
