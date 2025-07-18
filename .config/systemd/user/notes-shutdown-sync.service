@@ -1,0 +1,11 @@
+[Unit]
+Description=Notes - sync git repo on shutdown
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=%h/notes/scripts/sync.sh
+TimeoutStopSec=10s
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Notes - daily note
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

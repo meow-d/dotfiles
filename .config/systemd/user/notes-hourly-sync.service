@@ -1,0 +1,6 @@
+[Unit]
+Description=Notes - sync git repo every 3 hours
+
+[Service]
+Type=oneshot
+ExecStart=%h/nerd-stuff/notes/scripts/sync.sh
