@@ -21,8 +21,10 @@ end
 
 ### Functions
 # auto ls when change directory
-function list_dir --on-variable PWD
-    ls
+if status --is-interactive
+    function list_dir --on-variable PWD
+        ls
+    end
 end
 
 
@@ -72,7 +74,7 @@ abbr --add gs "git status"
 abbr --add ga "git add"
 abbr --add gc "git commit"
 abbr --add gcm --set-cursor "git commit -m \"%\""
-abbr --add gcn "git add . && git commit -a --no-edit --allow-empty-message; git pull && git push"
+abbr --add gcn "git add --all && git commit -a --no-edit --allow-empty-message; git pull && git push"
 
 abbr --add gsw "git switch"
 abbr --add gb "git branch"
