@@ -3,4 +3,5 @@ Description=Notes - daily note sync
 
 [Service]
 Type=oneshot
-ExecStart=%h/nerd-stuff/notes/scripts/sync.fish && %h/nerd-stuff/notes/scripts/daily.fish
+ExecStartPre= %h/nerd-stuff/notes/scripts/sync.fish
+ExecStart=%h/nerd-stuff/notes/scripts/daily.fish

@@ -6,31 +6,20 @@
 local M = {}
 
 M.base46 = {
-  theme = "blossom_light",
+  theme = "pastelDark",
+  transparency = true,
 
   hl_override = {
-    Comment = { italic = true },
-    ["@comment"] = { italic = true },
+    Comment = { italic = true, fg = "#888888" },
+    ["@comment"] = { italic = true, fg = "#888888" },
   },
   hl_add = {
-    RenderMarkdownH1Bg = {
-      bg = "#eeeeee",
-    },
-    RenderMarkdownH2Bg = {
-      bg = "#eeeeee",
-    },
-    RenderMarkdownH3Bg = {
-      bg = "#eeeeee",
-    },
-    RenderMarkdownH4Bg = {
-      bg = "#eeeeee",
-    },
-    RenderMarkdownH5Bg = {
-      bg = "#eeeeee",
-    },
-    RenderMarkdownH6Bg = {
-      bg = "#eeeeee",
-    },
+    RenderMarkdownH1Bg = { bg = "#555555" },
+    RenderMarkdownH2Bg = { bg = "#555555" },
+    RenderMarkdownH3Bg = { bg = "#555555" },
+    RenderMarkdownH4Bg = { bg = "#555555" },
+    RenderMarkdownH5Bg = { bg = "#555555" },
+    RenderMarkdownH6Bg = { bg = "#555555" },
   },
 }
 

@@ -1,8 +1,9 @@
 [Unit]
-Description=Notes - sync git repo every 3 hours
+Description=Notes - sync git repo every hour
 
 [Timer]
-OnUnitActiveSec=3h
+OnBootSec=15min
+OnUnitActiveSec=1h
 
 [Install]
 WantedBy=timers.target
