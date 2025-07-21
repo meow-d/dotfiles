@@ -5,3 +5,4 @@ Description=Notes - daily note sync
 Type=oneshot
 ExecStartPre= %h/nerd-stuff/notes/scripts/sync.fish
 ExecStart=%h/nerd-stuff/notes/scripts/daily.fish
+ExecStartPost=%h/nerd-stuff/notes/scripts/sync.fish
