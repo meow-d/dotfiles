@@ -1,23 +1,15 @@
 * {
-  font-family: Mononoki Nerd Font;
+  font-family: Mononoki Nerd Font, ZCOOL KuaiLe;
   font-size: 16px;
-  border-radius: 0;
-  min-height: 0;
-  border: none;
   font-weight: bold;
+  border-radius: 0;
+  border: none;
+  margin: 0 2px;
 }
 
 #workspaces{
   border: none;
   box-shadow: none;
-}
-
-#tray{
-  margin: 6px 3px;
-  background-color: rgba(36, 36, 52, 1.0);
-  padding: 6px 12px;
-  border-radius: 6px;
-  border-width: 0px;
 }
 
 #waybar {
@@ -26,6 +18,7 @@
   transition-duration: 0.5s;
 }
 
+#tray,
 #window,
 #clock,
 #custom-power,
@@ -42,6 +35,7 @@
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
+  margin-bottom: 0;;
   background-color: #1e1e2e;
   color: #181825;
 }
@@ -85,6 +79,9 @@
 #window{
   background-color: #74c7ec;
 }
+#tray{
+  background-color: rgba(36, 36, 52, 1.0);
+}
 
 #waybar.hidden {
   opacity: 0.5;
@@ -99,6 +96,7 @@
   /* Use box-shadow instead of border so the text isn't offset */
   padding: 6px 6px;
   margin: 6px 3px;
+  margin-bottom: 0;;
   border-radius: 4px;
   background-color: rgba(36, 36, 52, 1.0);
   color: #cdd6f4;
