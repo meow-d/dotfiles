@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Logout Menu (wlogout)
+Comment=Show wlogout logout/shutdown dialog
+Icon=/usr/share/wlogout/assets/logout.svg
+Exec=wlogout
+StartupNotify=false
+Terminal=false
+OnlyShowIn=Niri;
+Categories=System;
