@@ -37,6 +37,7 @@ abbr --add s sudo
 abbr --add n $VISUAL
 abbr --add nn sudoedit
 abbr --add vim nvim
+abbr --add code "code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 abbr --add rm trash-put
 abbr --add t trash-put
