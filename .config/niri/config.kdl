@@ -85,6 +85,7 @@ window-rule {
 window-rule {
     match app-id="firefox"
     match app-id="code"
+    match app-id="neovide"
     default-column-width { proportion 0.75; }
 }
 

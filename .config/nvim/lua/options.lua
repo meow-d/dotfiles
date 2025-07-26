@@ -28,9 +28,10 @@ g.bullets_custom_mappings = {
 
 -- neovide
 if g.neovide then
-  g.neovide_fullscreen = false
-  o.guifont = "Mononoki Nerd Font:h13"
-  -- o.linespace = 12
+  o.guifont = "Monofoki Nerd Font:h13"
+
+  g.neovide_opacity = 0.8
+  g.neovide_frame = "none"
 
   g.neovide_floating_blur_amount_x = 2.0
   g.neovide_floating_blur_amount_y = 2.0
