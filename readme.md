@@ -39,7 +39,7 @@ sudo dnf copr enable atim/starship
 dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_$(rpm -E %fedora)/home:TheLocehiliosan:yadm.repo
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
-sudo dnf install -y code starship yadm fish kitty micro util-linux-user wl-clipboard git-credential-libsecret git syncthing adw-gtk3-theme brightnessctl qt5ct qt6ct niri mako zoxide ibus-panel nvim gstreamer1-plugin-openh264 mozilla-openh264
+sudo dnf install -y code starship yadm fish kitty micro util-linux-user wl-clipboard git-credential-libsecret git syncthing adw-gtk3-theme brightnessctl qt5ct qt6ct niri mako zoxide ibus-panel nvim gstreamer1-plugin-openh264 mozilla-openh264 krita
 
 # clone dotfiles
 yadm clone https://github.com/meow-d/dotfiles
