@@ -1,5 +1,5 @@
 # meow_d's dotfiles
-personal dotfiles, managed using yadm, not intended for public use obviously. screenshots are outdated because i'm lazy.
+personal dotfiles, managed using yadm, not intended for public use obviously. screenshots are probably outdated because i'm lazy, but the dots themselves are probably up-to-date because i need them to sync between my laptops.
 
 ![screenshot](<.yadm/images/Screenshot from 2025-07-26 17-11-13.png>)
 
@@ -21,37 +21,40 @@ personal dotfiles, managed using yadm, not intended for public use obviously. sc
   - fastfetch
 
 - editor:
-  - vscode (not included here)
+  - vscode (not in repo)
   - neovim
   - neovim with neovide
 
 - font:
-  - mononoki nerd font
-  - monofoki nerd font
+  - mononoki nerd font (not in repo)
+  - monofoki nerd font (not in repo)
 
 ## install
 for my own reference
 
 ### install packages
-- `sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null`
-- `sudo dnf copr enable atim/starship`
-- `dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_42/home:TheLocehiliosan:yadm.repo`
-  - see: https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm&locale=en
-- `sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-- `sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1`
-- `sudo dnf install -y code starship yadm fish kitty micro util-linux-user wl-clipboard git-credential-libsecret git syncthing adw-gtk3-theme brightnessctl qt5ct qt6ct niri mako zoxide ibus-panel nvim`
+```sh
+# packages
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+sudo dnf copr enable atim/starship
+dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_42/home:TheLocehiliosan:yadm.repo
+# see: https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm&locale=en
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+sudo dnf install -y code starship yadm fish kitty micro util-linux-user wl-clipboard git-credential-libsecret git syncthing adw-gtk3-theme brightnessctl qt5ct qt6ct niri mako zoxide ibus-panel nvim
 
-### clone dotfiles
-- `yadm clone https://github.com/meow-d/dotfiles`
+# clone dotfiles
+yadm clone https://github.com/meow-d/dotfiles
 
-### flatpak
-- `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
-- `flatpak remote-delete fedora`
+# flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-delete fedora
 
-### misc
-- `git config --global credential.helper libsecret`
-- `echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment > /dev/null`
-- `fisher install kidonng/zoxide.fish`
+# misc
+git config --global credential.helper libsecret
+echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment > /dev/null
+fisher install kidonng/zoxide.fish
+```
 
 ## included but no longer using
 - desktop:
