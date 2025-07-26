@@ -1,36 +1,42 @@
-# My dotfiles
-Personal dotfiles managed using yadm, not intended for public use obviously. Screenshots are outdated because i'm lazy.
+# meow_d's dotfiles
+personal dotfiles, managed using yadm, not intended for public use obviously. screenshots are outdated because i'm lazy.
 
-![Neofetch](.yadm/images/2022-04-11-15-03-58.png)
-![Micro](.yadm/images/2022-04-11-15-05-00.png)
-![VSCode](.yadm/images/2022-04-11-15-08-55.png)
+![Micro](<.yadm/images/Screenshot from 2025-07-26 17-11-13.png>)
 
-## Configs
-- Kitty
-- FISH
-  - Starship prompt
-- VSCode
-- MPV
+## setup
+- desktop:
+  - niri
+  - mako
+  - fuzzel
+  - waybar
+  - wlogout
 
-### No longer using
-- ZSH
-- Micro
-  - Atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
-  - Made a plugin to emulate the `ctrl + l` behaviour of vscode
-- KDE Plasma
-  - I gotta be honest I'm not sure if the correct files are added, KDE configs are a mess
-  - Modified the ChromeOS theme's window decoration, to match terminal theme
-- Latte dock?
+- terminal:
+  - kitty
+  - fish
+  - starship prompt
+  - fastfetch
 
-## Not included configs
-- Font:
-  - whatever i feel like on that day
-  - Google Product Sans my beloved
-- KDE blur config
+- editor:
+  - vscode (not included here)
+  - neovim
+  - neovim with neovide
 
-## TODO
-- [ ] even more screenshots
-- [ ] more KDE configs
-- [ ] firefox
-  - how do you sync between different profiles??
-- GNOME
+- font:
+  - mononoki nerd font
+  - monofoki nerd font
+
+## included but no longer using
+- desktop:
+  - kde plasma
+    - i gotta be honest i'm not sure if the correct files are added, kde configs are a mess
+    - modified the chromeos theme's window decoration, to match terminal theme
+  - latte dock
+
+- terminal:
+  - zsh
+
+- editor:
+  - micro
+    - atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
+    - made a plugin to emulate the `ctrl + l` behaviour of vscode
