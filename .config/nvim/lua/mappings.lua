@@ -29,14 +29,16 @@ end)
 map({ "n", "x" }, "<c-s-l>", mc.matchAllAddCursors)
 
 map("n", "<Esc>", function()
-  if not mc.cursorsEnabled() then
-    vim.cmd "noh"
-  elseif mc.hasCursors() then
+
+  if mc.cursorsEnabled() then
     mc.clearCursors()
-  else
-    mc.enableCursors()
   end
-end)
+
+  if vim.v.hlsearch == 1 then
+    vim.cmd("nohlsearch")
+  end
+
+end, { silent = true })
 
 -- bullets.vim
 map({ "n", "v", "i" }, "<A-c>", "<Plug>(bullets-toggle-checkbox)")

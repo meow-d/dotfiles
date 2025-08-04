@@ -9,23 +9,17 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     python = { "black", "ruff" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
-    javascript = { "prettier" },
-    javascriptreact = { "prettier" },
-    typesrcipt = { "prettier" },
-    typescriptreact = { "prettier" },
+    css = { "prettierd" },
+    html = { "prettierd" },
+    javascript = { "prettierd" },
+    javascriptreact = { "prettierd" },
+    typesrcipt = { "prettierd" },
+    typescriptreact = { "prettierd" },
     go = { "gofmt" },
     cpp = { "clang-format" },
   },
 
-  format_on_save = function()
-    -- TODO this also gets passed to normal format
-    if vim.tbl_contains(disabled_paths, cwd) then
-      return
-    end
-    return { timeout_ms = 500 }
-  end,
+  format_on_save = false,
 }
 
 return options

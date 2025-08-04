@@ -2,6 +2,7 @@
 bind \e\[3\;5~ kill-word
 bind \cH backward-kill-word
 
+
 ### Variables
 set -x LC_ALL "en_US.UTF-8"
 
@@ -15,9 +16,15 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
 fish_add_path $HOME/.local/lib/dart-sdk/bin
 
+set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+
 if command -v mise >/dev/null
   mise activate fish | source
 end
+
 
 ### Functions
 # auto ls when change directory
@@ -88,11 +95,9 @@ abbr --add gsh "git show"
 abbr --add gst "git stash"
 abbr --add gstp "git stash pop"
 
-### pnpm
-set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
+## for work
+set device_width 412
+abbr --add m --set-cursor 'string join "" (math -s 3 "% / $device_width * 100") vw | tee /dev/tty | wl-copy -n'
 
 
 ### fastfetch
