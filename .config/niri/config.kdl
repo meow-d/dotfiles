@@ -27,8 +27,7 @@ spawn-at-startup "ibus" "start" "--type" "wayland"
 
 // autostart (apps)
 spawn-at-startup "firefox"
-spawn-at-startup "code --enable-features=UseOzonePlatform --ozone-platform=wayland"
-spawn-at-startup "sh" "-c" "KRITA_NO_STYLE_OVERRIDE=1 krita"
+spawn-at-startup "code" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 
 
 // input
@@ -99,12 +98,14 @@ window-rule {
 window-rule {
     match app-id="firefox"
     match app-id="code"
+    match app-id="Code"
     match app-id="neovide"
     default-column-width { proportion 0.75; }
 }
 
 window-rule {
     match app-id="code"
+    match app-id="Code"
     opacity 0.9
 }
 
