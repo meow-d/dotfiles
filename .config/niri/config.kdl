@@ -10,19 +10,8 @@ environment {
 
 
 // autostart
-spawn-at-startup "mako"
-spawn-at-startup "waybar"
-spawn-at-startup "sh" "-c" "swaybg -m fill -i ~/Pictures/Wallpapers/ルシュ_wallhaven-l8g3dp.png"
-
-spawn-at-startup "swayidle" "-w" "timeout" "1801" "niri msg action power-off-monitors" "timeout" "1800" "swaylock -f" "before-sleep" "swaylock -f"
-spawn-at-startup "ibus" "start" "--type" "wayland"
-
-// welp ags doesn't work for some reason
-// spawn-at-startup "ags" "run"
-
-// WONTFIX the entire thing could also have configured with systemd instead for easier monitoring and restarting
+// systemd is used instead
 // https://github.com/YaLTeR/niri/wiki/Example-systemd-Setup
-// spawn-at-startup "xwayland-satellite"
 
 
 // autostart (apps)
@@ -45,6 +34,10 @@ input {
         accel-speed 0.3
         accel-profile "flat"
     }
+
+    touchpad {
+        tap
+    }
 }
 
 
@@ -54,20 +47,15 @@ layout {
 
     focus-ring {
         width 0
+        // active-color "#000f"
         // active-gradient from="#E9CFD7" to="#B595CD" angle=45
-    }
-
-    border {
-        width 2
-        active-color "#ffff"
-        inactive-color "#0000"
     }
 
     shadow {
         on
         draw-behind-window false
         softness 15
-        spread 1
+        spread 0
         offset x=0 y=0
         color "#ffff"
         inactive-color "#0000"
@@ -79,7 +67,7 @@ hotkey-overlay {
 }
 
 output "eDP-1" {
-    scale 1.1
+    scale 1
 }
 
 window-rule {

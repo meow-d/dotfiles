@@ -35,3 +35,10 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- notes specific settings
+if vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes" then
+  vim.cmd("edit ./work todo.md")
+  vim.cmd("edit ./todo.md")
+  vim.cmd("ObsidianToday")
+end
