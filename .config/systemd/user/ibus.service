@@ -1,0 +1,10 @@
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExitType=cgroup
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/bin/ibus-daemon -drxR
+Restart=on-failure
+TimeoutSec=15s
