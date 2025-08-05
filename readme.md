@@ -42,8 +42,10 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 sudo dnf install -y code starship yadm fish kitty micro util-linux-user wl-clipboard git-credential-libsecret git syncthing adw-gtk3-theme brightnessctl qt5ct qt6ct niri mako zoxide ibus-panel nvim gstreamer1-plugin-openh264 mozilla-openh264 krita
 
-# clone dotfiles
+# clone dotfiles and setup
 yadm clone https://github.com/meow-d/dotfiles
+systemctl --user daemon-reload
+systemctl --user add-wants niri.service mako waybar swaybg swayidle ibus # i think this works?
 
 # flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
