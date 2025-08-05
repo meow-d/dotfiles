@@ -1,6 +1,10 @@
 {
+    // https://github.com/Alexays/Waybar/wiki/
+
+    // misc
     "layer": "top",
 
+    // enabled modules
     "modules-left": [
       "niri/workspaces",
       "niri/window"
@@ -14,6 +18,7 @@
       "clock"
     ],
 
+    // module settings
     "pulseaudio": {
         "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -40,7 +45,9 @@
 
     "clock": {
         "format": "{:%a, %d %b  %I:%M %p}",
-        "format-alt": "{:%I:%M %p}"
+        "tooltip-format": "<small>{calendar}</small>",
+        "on-click": "gnome-calendar"
+        // "format-alt": "{:%I:%M %p}"
     },
 
     "network": {
@@ -53,7 +60,6 @@
     },
 
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{percent}% {icon} ",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     }

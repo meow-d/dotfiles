@@ -2,7 +2,7 @@
 * {
   font-family:
     Caveat,
-    Mononoki Nerd Font,
+    Monofoki Nerd Font,
     Zen Maru Gothic,
     ZCOOL KuaiLe;
   font-size: 14pt;
@@ -48,7 +48,7 @@
 .module:hover {
   font-family:
     Caveat Brush,
-    Mononoki Nerd Font,
+    Monofoki Nerd Font,
     Zen Maru Gothic,
     ZCOOL KuaiLe;
 }
@@ -58,7 +58,7 @@
 .module:active {
   font-family:
     Caveat,
-    Mononoki Nerd Font,
+    Monofoki Nerd Font,
     Zen Maru Gothic,
     ZCOOL KuaiLe;
 }
@@ -90,10 +90,11 @@
   text-decoration: solid underline;
 }
 
-/* === tooltip === */
-tooltip {
+/* === tooltip and tray menu === */
+tooltip,
+#tray menu {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 tooltip box {
