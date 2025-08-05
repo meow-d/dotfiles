@@ -1,0 +1,6 @@
+[Unit]
+Description=Zus Checkin daily
+
+[Service]
+Type=oneshot
+ExecStart=%h/Documents/zus_checkin.sh
