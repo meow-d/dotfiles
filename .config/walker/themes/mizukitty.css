@@ -68,7 +68,6 @@ slider,
 child:selected,
 child:hover {
   background: black;
-  border: 3px solid rgb(255, 255, 255);
   border: 5px solid rgb(255, 255, 255);
   transform: none;
 }
@@ -76,7 +75,7 @@ child:hover {
 child:selected > *,
 child:hover {
   font-family: Caveat brush;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
 
 /* individual app items */

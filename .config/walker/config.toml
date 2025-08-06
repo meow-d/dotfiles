@@ -1,45 +1,22 @@
 theme = "mizukitty"
 hotreload_theme = true
 
-[keys]
-accept_typeahead = ["tab"]
-trigger_labels = "lalt"
-next = ["down"]
-prev = ["up"]
-close = ["esc"]
-remove_from_history = ["shift backspace"]
-resume_query = ["ctrl r"]
-toggle_exact_search = ["ctrl m"]
-
 [keys.activation_modifiers]
 keep_open = "shift"
 alternate = "alt"
 
-[keys.ai]
-clear_session = ["ctrl x"]
-copy_last_response = ["ctrl c"]
-resume_session = ["ctrl r"]
-run_last_response = ["ctrl e"]
-
-[events]
-on_activate = ""
-on_selection = ""
-on_exit = ""
-on_launch = ""
-on_query_change = ""
-
 [list]
 dynamic_sub = true
 keyboard_scroll_style = "emacs"
-max_entries = 50
+max_entries = 5
 show_initial_entries = true
 single_click = true
 visibility_threshold = 20
-placeholder = "No Results"
+placeholder = ">.<"
 
 [search]
 argument_delimiter = "#"
-placeholder = "Search..."
+placeholder = "✧･ﾟ: *✧･ﾟ:* "
 delay = 0
 resume_last_query = false
 
