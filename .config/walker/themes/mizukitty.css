@@ -1,0 +1,125 @@
+/* misc */
+#window,
+#box,
+#aiScroll,
+#aiList,
+#search,
+#password,
+#input,
+#prompt,
+#clear,
+#typeahead,
+#list,
+child,
+scrollbar,
+slider,
+#item,
+#text,
+#label,
+#bar,
+#sub,
+#activationlabel {
+  all: unset;
+}
+
+#cfgerr {
+  background: rgba(255, 0, 0, 0.4);
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+/* text */
+* {
+  font-family:
+    Caveat,
+    Monofoki Nerd Font,
+    Zen Maru Gothic,
+    ZCOOL KuaiLe;
+  font-size: 20pt;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* main box */
+#box {
+  background: transparent;
+  padding: 0;
+}
+
+#prompt {
+  margin-left: 4px;
+  margin-right: 12px;
+  color: white;
+  opacity: 0.2;
+}
+
+#input placeholder {
+  opacity: 0.5;
+}
+
+#list {
+  padding: 8px 0;
+}
+
+/* search and highlighted stuff */
+#search,
+child:selected,
+child:hover {
+  background: black;
+  border: 3px solid rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
+  transform: none;
+}
+
+child:selected > *,
+child:hover {
+  font-family: Caveat brush;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* individual app items */
+child {
+  background: black;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  transform: skewX(2deg) skewY(-1deg) scale(0.9);
+}
+
+#icon {
+  margin-right: 14px;
+}
+
+/* child:nth-child(1) {
+  transform: skewX(2deg) skewY(-1deg) scale(0.95);
+} */
+
+
+#label {
+  font-weight: 500;
+}
+
+#sub {
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+#activationlabel {
+}
+
+#bar {
+}
+
+.barentry {
+}
+
+.activation #activationlabel {
+}
+
+.activation #text,
+.activation #icon,
+.activation #search {
+  opacity: 0.5;
+}
