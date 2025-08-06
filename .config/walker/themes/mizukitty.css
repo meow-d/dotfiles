@@ -45,7 +45,6 @@ slider,
 /* main box */
 #box {
   background: transparent;
-  padding: 0;
 }
 
 #prompt {
@@ -60,22 +59,27 @@ slider,
 }
 
 #list {
-  padding: 8px 0;
+  padding: 8px 30px;
 }
 
 /* search and highlighted stuff */
+#search {
+  padding: 8px 0;
+}
+
 #search,
 child:selected,
 child:hover {
   background: black;
   border: 5px solid rgb(255, 255, 255);
   transform: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 
 child:selected > *,
 child:hover {
   font-family: Caveat brush;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
 /* individual app items */
@@ -85,6 +89,7 @@ child {
   margin-bottom: 10px;
   border: 3px solid rgb(255, 255, 255);
   transform: skewX(2deg) skewY(-1deg) scale(0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 #icon {
@@ -97,28 +102,9 @@ child {
 
 
 #label {
-  font-weight: 500;
 }
 
 #sub {
   opacity: 0.5;
   font-size: 0.8em;
-}
-
-#activationlabel {
-}
-
-#bar {
-}
-
-.barentry {
-}
-
-.activation #activationlabel {
-}
-
-.activation #text,
-.activation #icon,
-.activation #search {
-  opacity: 0.5;
 }
