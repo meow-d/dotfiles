@@ -13,10 +13,11 @@ environment {
 // systemd is used instead
 // https://github.com/YaLTeR/niri/wiki/Example-systemd-Setup
 
-
 // autostart (apps)
-spawn-at-startup "firefox"
-spawn-at-startup "code" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
+// xdg-autostart is used instead
+// spawn-at-startup "firefox"
+// spawn-at-startup "sh" "-c" "kitty --hold -d ~/nerd-stuff/notes/ nvim"
+// spawn-at-startup "code" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 
 
 // input
@@ -103,7 +104,8 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+E hotkey-overlay-title="Open a File Manager: nautilus" { spawn "nautilus"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    // Mod+D hotkey-overlay-title="Application Launcher: fuzzel" { spawn "fuzzel"; }
+    Mod+D hotkey-overlay-title="Application Launcher: walker" { spawn "walker"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.02+"; }
