@@ -10,24 +10,32 @@ personal dotfiles, managed using yadm, not intended for public use obviously. sc
 - desktop:
   - niri
   - mako
-  - fuzzel
+  - walker
   - waybar
   - wlogout
+  - [mizuena wallpaper by ルシュ](https://www.pixiv.net/en/artworks/109913151)
 
 - terminal:
   - kitty
   - fish
-  - starship prompt
+  - starship
   - fastfetch
 
 - editor:
-  - vscode (not in repo)
+  - vscode (config not in repo)
   - neovim
   - neovim with neovide
 
 - font:
+  - monofoki nerd font
+  - caveat
+  - caveat brush
   - mononoki nerd font (not in repo)
-  - monofoki nerd font (not in repo)
+
+- apps:
+  - yt-dlp
+  - mpv
+  - aria2 (urm i think i forgot to include...?)
 
 ## install
 for my own reference
@@ -59,6 +67,7 @@ fisher install kidonng/zoxide.fish
 
 ## included but no longer using
 - desktop:
+  - fuzzel
   - kde plasma
     - i gotta be honest i'm not sure if the correct files are added, kde configs are a mess
     - modified the chromeos theme's window decoration, to match terminal theme
@@ -66,8 +75,12 @@ fisher install kidonng/zoxide.fish
 
 - terminal:
   - zsh
+  - wezterm
 
 - editor:
   - micro
     - atom one dark theme, but modified to use the terminal's background for the ✨ blur ✨
     - made a plugin to emulate the `ctrl + l` behaviour of vscode
+
+- apps:
+  - gimp
