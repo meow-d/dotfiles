@@ -5,6 +5,6 @@ After=graphical-session.target
 [Service]
 ExitType=cgroup
 ExecStartPre=/usr/bin/sleep 10
-ExecStart=/usr/bin/ibus-daemon -drxR
+ExecStart=/usr/libexec/ibus-ui-gtk3 --enable-wayland-im --exec-daemon --daemon-args "--xim --panel disable"
 Restart=on-failure
 TimeoutSec=15s
