@@ -78,8 +78,9 @@ top = 8
 
 [ui.window.box.search.prompt]
 name = "prompt"
-icon = "edit-find"
-theme = ""
+text = "!"
+# icon = "edit-find"
+# theme = ""
 pixel_size = 18
 h_align = "center"
 v_align = "center"
