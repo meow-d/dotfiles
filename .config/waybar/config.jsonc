@@ -51,7 +51,8 @@
     },
 
     "network": {
-        "format-wifi": "{essid}  ",
+        // "format-wifi": "{essid}  ",
+        "format-wifi": "Redmi  ",
         "format-ethernet": "{ipaddr}/{cidr}  ",
         "tooltip-format": "{ifname} via {gwaddr}  ",
         "format-linked": "{ifname} (No IP)  ",
