@@ -35,7 +35,7 @@ personal dotfiles, managed using yadm, not intended for public use obviously. sc
 - apps:
   - yt-dlp
   - mpv
-  - aria2 (urm i think i forgot to include...?)
+  - aria2
 
 ## install
 for my own reference
