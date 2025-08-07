@@ -1,6 +1,10 @@
 theme = "mizukitty"
 hotreload_theme = true
 
+# for debugging
+# close_when_open = false
+# as_window = true
+
 [list]
 max_entries = 5
 placeholder = ">.<"
