@@ -1,0 +1,49 @@
+## vi mode
+# set editing-mode vi
+# set show-mode-in-prompt on
+# $if term=linux
+# 	set vi-ins-mode-string \1\e[?0c\2
+# 	set vi-cmd-mode-string \1\e[?8c\2
+# $else
+# 	set vi-ins-mode-string \1\e[6 q\2
+# 	set vi-cmd-mode-string \1\e[2 q\2
+# $endif
+
+
+## binds
+# normal editing binds
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+"\e[1;5H": beginning-of-line
+"\e[1;5F": end-of-line
+"\C-H": shell-backward-kill-word
+"\e[3;5~": shell-kill-word
+"\C-z": undo
+
+# completions
+TAB: menu-complete
+"\e[Z": menu-complete-backward
+
+# history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+
+## options
+# completions
+set show-all-if-ambiguous on
+set page-completions off
+set menu-complete-display-prefix on
+
+set completion-ignore-case on
+set completion-map-case on
+
+set colored-stats on
+set visible-stats on
+set mark-symlinked-directories on
+set colored-completion-prefix on
+set menu-complete-display-prefix on
+
+# others
+set echo-control-characters off
+set blink-matching-paren on
