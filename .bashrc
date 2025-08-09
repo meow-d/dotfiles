@@ -1,4 +1,4 @@
-## source global definitions
+## source system bashrc
 if [ -f /etc/bashrc ]; then
 	source /etc/bashrc
 fi

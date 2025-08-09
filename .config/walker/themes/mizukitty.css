@@ -97,7 +97,7 @@ slider,
 #list {
   padding: 20px 30px;
   /* doesnt work.. */
-  margin-top: 3px !important;
+  /* margin: 0 !important; */
 }
 
 child {

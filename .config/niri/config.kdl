@@ -44,18 +44,18 @@ input {
 
 // looks
 layout {
-    gaps 3
+    gaps 5
 
     focus-ring {
         width 0
-        // active-color "#000f"
+        active-color "#ffff"
         // active-gradient from="#E9CFD7" to="#B595CD" angle=45
     }
 
     shadow {
         on
         draw-behind-window false
-        softness 15
+        softness 5
         spread 0
         offset x=0 y=0
         color "#ffff"
