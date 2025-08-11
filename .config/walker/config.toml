@@ -1,15 +1,21 @@
 theme = "mizukitty"
 hotreload_theme = true
 
-# for debugging
+# for debugging with gtk inspector
 # as_window = true
 
 [list]
 max_entries = 5
-placeholder = ">.<"
 
 [search]
 placeholder = "    ✧･ﾟ: *"
 
 [activation_mode]
 labels = "jkl;asdf"
+
+[applications]
+cache = true
+
+[builtins.runner]
+# disabled cause performance's bad for some reason
+switcher_only = true

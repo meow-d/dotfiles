@@ -1,3 +1,5 @@
+# unfortunately, unlike config.toml, there's no default config that's loaded first.. so i can't remove anything
+
 [ui.anchors]
 bottom = true
 left = true
