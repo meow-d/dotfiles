@@ -1,77 +1,97 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
     "logo": {
-        "source": "~/.config/fastfetch/childe-lumine-cuddle_Sorane38.jpg",
+        "source": "~/.config/fastfetch/123581671_p0.jpg",
         "type": "kitty",
         "height": 14,
         // "width": 33,
         "padding": {
             "top": 1,
-            "bottom": 0,
             "left": 2,
             "right": 2
         }
     },
+
+
     "display": {
         "separator": " "
     },
+
+
     "modules": [
-	"break",
-	{
+        "break",
+
+        {
             "type": "title",
             "color": {
                 "user": "32",
-                "at": "37",
+                "at": "32",
                 "host": "32"
             }
         },
+
+
         "break",
+
         {
             "type": "os",
-            "key": "distro    ",
+            "key": "distro    "
         },
+
         // {   "type": "packages",
         //     "key": "packages  ",
         // },
+
         {
             "type": "shell",
-            "key": "shell     ",
+            "key": "shell     "
         },
+
         {
             "type": "terminal",
-            "key": "terminal  ",
+            "key": "terminal  "
         },
+
         {
             "type": "wm",
             "format": "{} ({3})",
-            "key": "desktop   ",
+            "key": "desktop   "
         },
+
         {
             "type": "cpu",
-            "key": "cpu       ",
+            "key": "cpu       "
         },
+
         {
             "type": "gpu",
-            "key": "gpu       ",
+            "key": "gpu       "
         },
+
         {
             "type": "memory",
-            "key": "ram       ",
+            "key": "ram       "
         },
+
         {
             "type": "disk",
-            "key": "disk      ",
+            "key": "disk      "
         },
+
         // {
         //     "type": "media",
         //     "key": "󰝚         ",
         //     "keyColor": "34", 
         // },
+
         "break",
+
         {
             "type": "colors",
-            "symbol": "circle"
+            "symbol": "star"
         },
+
         "break",
         "break"
     ]

@@ -1,16 +1,17 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# gotta exclude line_break from $all
 format = """
-[ ┍━━━━━](bright-purple) $all\
-[ │](bright-purple)
-[ ╰┈](bright-purple)$character """
+[ ❖ ❀ ](bright-purple)$character[ ❀ ❖ ](bright-purple)$all[♡ ✧･ﾟ*✧･ﾟ](bright-purple)\
+$line_break\
+[ ❖](bright-purple) """
 
-right_format = "[♡ ✧･ﾟ: *✧･ﾟ:* ](bright-purple)"
+right_format = "[ ❖ ❀ ](bright-purple)$character[ ❀ ❖ ](bright-purple)"
 
 [character]
 format = "$symbol"
-success_symbol = "[➤](bright-purple)"
-error_symbol = "[➤](bright-red)"
+success_symbol = "[✦](bright-purple)"
+error_symbol = "[✦](bright-red)"
 
 [git_commit]
 tag_symbol = " tag "
