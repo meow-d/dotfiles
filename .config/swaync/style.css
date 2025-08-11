@@ -10,6 +10,7 @@
   color: white;
   background: transparent;
   border: none;
+  box-shadow: none;
 }
 
 /* animations */
@@ -43,6 +44,11 @@
 }
 
 /* notifications */
+/* notification content is styled isntead of notification to separate it with icon */
+.notification-row .notification-background .notification {
+  padding: 5px
+}
+
 .notification-row .notification-background .notification .notification-content  {
   margin: 0 10px;
   padding: 10px;
@@ -51,7 +57,7 @@
   transition: all 0.2s;
 }
 
-.notification-row .notification-background .notification:hover .notification-content  {
+.notification-background .notification:hover .notification-content  {
   transform: none;
 }
 
@@ -107,10 +113,10 @@
     0px 0px 4px var(--highlight-color);
 }
 
-/* TODO notif image */
+/* icon */
 .notification .image {
   border-radius: 5px;
-  transform: translateX(-20px) skewX(-3deg) skewY(1deg) scale(1.1);
+  transform: translateX(-30px) translateY(-20px) skewX(-2deg) skewY(1deg) scale(1.1);
 }
 
 /* close button */
@@ -131,3 +137,6 @@
 .control-center .control-center-list-placeholder {
   opacity: 1;
 }
+
+/* group */
+.notification-group:hover {}
