@@ -13,19 +13,20 @@
       "tray",
       "pulseaudio",
       "backlight",
-      "network",
       "battery",
-      "clock"
+      "network",
+      "clock",
+      "custom/notification"
     ],
 
     // module settings
     "pulseaudio": {
-        "format": "{volume}% {icon}  {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -33,7 +34,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", " ", " "]
         },
         "on-click": "flatpak run com.github.wwmm.easyeffects"
     },
@@ -51,16 +52,43 @@
     },
 
     "network": {
-        "format-wifi": "{essid}  ",
-        "format-ethernet": "{ipaddr}/{cidr}  ",
-        "tooltip-format": "{ifname} via {gwaddr}  ",
-        "format-linked": "{ifname} (No IP)  ",
-        "format-disconnected": "Disconnected ⚠ ",
+        // "format-wifi": "{essid}  ",
+        // "format-disconnected": "Disconnected ⚠ ",
+        // "format-ethernet": "{ipaddr}/{cidr}  ",
+        // "tooltip-format": "{ifname} via {gwaddr}  ",
+        // "format-linked": "{ifname} (No IP)  ",
+        "format-wifi": " ",
+        "format-disconnected": "⚠ ",
+        "format-ethernet": " ",
+        "format-linked": " !",
+        "tooltip-format": "{essid}\n{ifname}\n{gwaddr}",
         "on-click": "kitty nmtui"
     },
 
     "backlight": {
         "format": "{percent}% {icon} ",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    },
+
+    // sway notification center
+    "custom/notification": {
+      "tooltip": false,
+      "format": "{icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
     }
 }
