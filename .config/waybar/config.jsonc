@@ -26,7 +26,7 @@
         "format-bluetooth-muted": " {icon}",
         "format-muted": "",
         "format-source": "{volume}% ",
-        "format-source-muted": " ",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -34,28 +34,38 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", " ", " "]
+            "default": ["", "", ""]
         },
         "on-click": "flatpak run com.github.wwmm.easyeffects"
     },
 
     "battery": {
-        "format": "{capacity}% {icon} ",
+        "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
 
     "clock": {
         "format": "{:%a, %d %b  %I:%M %p}",
-        "tooltip-format": "<small>{calendar}</small>",
-        "on-click": "gnome-calendar"
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "gnome-calendar",
         // "format-alt": "{:%I:%M %p}"
+        "calendar": {
+            "weeks-pos"     : "right",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
     },
 
     "network": {
-        "format-wifi": "{essid}  ",
-        "format-disconnected": "Disconnected ⚠ ",
-        "format-ethernet": "{ipaddr}/{cidr}  ",
-        "format-linked": "{ifname} (No IP)  ",
+        "format-wifi": "{essid} ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
         // "format-wifi": " ",
         // "format-disconnected": "⚠ ",
         // "format-ethernet": " ",
@@ -65,14 +75,15 @@
     },
 
     "backlight": {
-        "format": "{percent}% {icon} ",
+        "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     },
 
     // sway notification center
     "custom/notification": {
-      "tooltip": false,
-      "format": "{icon}",
+      "tooltip-format": "{} notifications",
+      // yes, displaying count kinda ugly, but i want hovering to do something..
+      "format": "{} {icon}",
       "format-icons": {
         "notification": "<span foreground='red'><sup></sup></span>",
         "none": "",
