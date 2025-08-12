@@ -34,6 +34,7 @@
 }
 
 /* common */
+/* notification content is styled isntead of notification to separate it with icon */
 .notification-row .notification-background .notification .notification-content ,
 .close-button,
 .notification .image {
@@ -44,7 +45,6 @@
 }
 
 /* notifications */
-/* notification content is styled isntead of notification to separate it with icon */
 .notification-row .notification-background .notification {
   padding: 5px
 }
@@ -62,6 +62,7 @@
 }
 
 .notification-row .notification-background .notification:active .notification-content  {
+  transition: none;
   transform: skewX(2deg) skewY(-1deg) scale(0.8);
 }
 
@@ -117,6 +118,7 @@
 .notification .image {
   border-radius: 5px;
   transform: translateX(-30px) translateY(-20px) skewX(-2deg) skewY(1deg) scale(1.1);
+  object-fit: cover;
 }
 
 /* close button */
@@ -131,6 +133,7 @@
 }
 
 .close-button:active {
+  transition: none;
   transform: skewX(-4deg) skewY(1deg) scale(0.8);
 }
 
@@ -139,4 +142,12 @@
 }
 
 /* group */
-.notification-group:hover {}
+/* anyways since i'm styling the notification content, groups are now broken, because the content don't render when the group isn't expanded */
+/* doesn't look the best but it does it for now */
+.notification-group {
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.4) 40%,
+    rgba(70, 60, 90, 0) 70%
+  );
+}

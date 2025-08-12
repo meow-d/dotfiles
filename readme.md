@@ -1,7 +1,7 @@
 # meow_d's dotfiles
 personal dotfiles, managed using yadm, not intended for public use obviously. screenshots are probably outdated because i'm lazy, but the dots themselves are probably up-to-date because i need them to sync between my laptops.
 
-![screenshot](<.yadm/images/Screenshot from 2025-07-26 17-11-13.png>)
+![screenshot](<.yadm/images/Screenshot from 2025-08-12 11-02-22.png>)
 
 ## setup
 - os:

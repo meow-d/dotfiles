@@ -52,15 +52,15 @@
     },
 
     "network": {
-        // "format-wifi": "{essid}  ",
-        // "format-disconnected": "Disconnected ⚠ ",
-        // "format-ethernet": "{ipaddr}/{cidr}  ",
-        // "tooltip-format": "{ifname} via {gwaddr}  ",
-        // "format-linked": "{ifname} (No IP)  ",
         "format-wifi": " ",
-        "format-disconnected": "⚠ ",
-        "format-ethernet": " ",
-        "format-linked": " !",
+        // "format-wifi": "{essid}  ",
+        "format-disconnected": "Disconnected ⚠ ",
+        "format-ethernet": "{ipaddr}/{cidr}  ",
+        "format-linked": "{ifname} (No IP)  ",
+        // "format-wifi": " ",
+        // "format-disconnected": "⚠ ",
+        // "format-ethernet": " ",
+        // "format-linked": " !",
         "tooltip-format": "{essid}\n{ifname}\n{gwaddr}",
         "on-click": "kitty nmtui"
     },

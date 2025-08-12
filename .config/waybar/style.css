@@ -51,6 +51,22 @@
     Monofoki Nerd Font,
     Zen Maru Gothic,
     ZCOOL KuaiLe;
+  text-shadow:
+    0px 0px 7px white,
+    0px 0px 7px white,
+    0px 0px 7px white,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black;
 }
 
 /* .module:active doesn't do anything actually... */
