@@ -1,4 +1,4 @@
-/* fonts, unset styles */
+/* fonts */
 * {
   font-family:
     Caveat,
@@ -8,6 +8,11 @@
   font-size: 18pt;
   font-weight: 700;
   color: white;
+}
+
+/* unset styles */
+.notification-row .notification-background .notification,
+.notification-row .notification-background .notification:hover .notification-default-action {
   background: transparent;
   border: none;
   box-shadow: none;
@@ -118,7 +123,7 @@
 .notification .image {
   border-radius: 5px;
   transform: translateX(-30px) translateY(-20px) skewX(-2deg) skewY(1deg) scale(1.1);
-  object-fit: cover;
+  background-size: cover;
 }
 
 /* close button */
@@ -151,3 +156,72 @@
     rgba(70, 60, 90, 0) 70%
   );
 }
+
+/* buttons */
+.widget-buttons-grid .text-button {
+  border-radius: 6px;
+  text-shadow:
+    0px 0px 5px white,
+    0px 0px 5px white,
+    0px 0px 7px white,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black;
+}
+
+.widget-buttons-grid .text-button:hover *,
+.widget-buttons-grid .text-button.toggle:checked * {
+  font-family:
+    Caveat Brush,
+    Monofoki Nerd Font,
+    Zen Maru Gothic,
+    ZCOOL KuaiLe;
+  text-shadow:
+    0px 0px 7px white,
+    0px 0px 7px white,
+    0px 0px 12px white,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black;
+}
+
+.widget-buttons-grid .text-button:active *, 
+.widget-buttons-grid .text-button.toggle:checked * {
+  text-shadow:
+    0px 0px 7px white,
+    0px 0px 20px white,
+    0px 0px 20px white,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black,
+    0px 0px 2px black;
+}
+
+/* TODO mpris */
+

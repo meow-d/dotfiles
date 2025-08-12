@@ -52,8 +52,7 @@
     },
 
     "network": {
-        "format-wifi": " ",
-        // "format-wifi": "{essid}  ",
+        "format-wifi": "{essid}  ",
         "format-disconnected": "Disconnected ⚠ ",
         "format-ethernet": "{ipaddr}/{cidr}  ",
         "format-linked": "{ifname} (No IP)  ",
