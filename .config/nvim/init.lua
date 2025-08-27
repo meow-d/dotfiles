@@ -37,6 +37,7 @@ vim.schedule(function()
 end)
 
 -- notes specific settings
+-- yes it's hacky as hell lol
 if vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes" then
   vim.cmd("edit ./work todo.md")
   vim.cmd("edit ./todo.md")

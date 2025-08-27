@@ -6,5 +6,5 @@ Icon=/usr/share/wlogout/assets/logout.svg
 Exec=wlogout
 StartupNotify=false
 Terminal=false
-OnlyShowIn=Niri;
+# OnlyShowIn=Niri;
 Categories=System;

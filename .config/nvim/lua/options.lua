@@ -2,11 +2,14 @@ require "nvchad.options"
 
 local o = vim.o
 local g = vim.g
+
 o.cursorlineopt = "both"
 o.wildmode = "longest,list,full"
 o.wildmenu = true
 o.relativenumber = true
 g.editorconfig = true
+-- WHY do i need to do this?????
+g.markdown_recommended_style = 0
 o.breakindent = true
 
 o.autowriteall = true
