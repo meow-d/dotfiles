@@ -1,0 +1,175 @@
+/* misc */
+child,
+scrollbar,
+slider,
+content-container,
+gridview,
+.input {
+  all: unset;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* text */
+* {
+  font-family:
+    Caveat,
+    Monofoki Nerd Font,
+    Zen Maru Gothic,
+    ZCOOL KuaiLe;
+  font-size: 18pt;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* main box */
+.box-wrapper {
+  /* doesn't work anymore :\ */
+  animation: slideIn 0.15s ease-in-out;
+}
+
+/* search */
+.search-container {
+  padding: 20px 8px;
+  margin: 8px;
+}
+
+@keyframes prompt-skew {
+  from {
+    transform: skewX(-13deg) skewY(-8deg);
+  }
+  50% {
+    transform: skewX(17deg) skewY(17deg);
+  }
+  to {
+    transform: skewX(13deg) skewY(8deg);
+  }
+}
+
+/* TODO where issit??? */
+.prompt {
+  font-family: caveat brush;
+  font-weight: bolder;
+  transform: skewX(17deg) skewY(17deg);
+  animation: prompt-skew 0.5s steps(5) infinite alternate;
+  opacity: 1;
+  padding: 0 5px;
+  margin: 0 30px 0 20px;
+  border: 2px solid white;
+  background-color: black;
+}
+
+/* app list + search */
+.list.view {
+  padding: 20px 30px;
+  margin: 0;
+}
+
+child {
+  border-radius: 5px;
+  background: black;
+  padding: 14px;
+  margin-bottom: 10px;
+
+  box-shadow:
+    0px 0px 10px rgba(0, 0, 0, 0.8),
+    0px 0px 0 3px rgb(255, 255, 255);
+
+  transform: skewX(2deg) skewY(-1deg) scale(0.9);
+  filter: brightness(0.9);
+}
+
+/* child:first-child {
+  animation: idk 0.1s ease-in-out;
+}
+child:nth-child(2) {
+  animation: idk 0.2s ease-in-out;
+}
+child:nth-child(3) {
+  animation: idk 0.3s ease-in-out;
+}
+child:nth-child(4) {
+  animation: idk 0.4s ease-in-out;
+}
+*/
+
+.search-container,
+child:selected,
+child:hover {
+  background: black;
+  transform: none;
+  filter: none;
+  box-shadow:
+    0px 0px 20px rgba(0, 0, 0, 0.4),
+    0px 0px 0 5px rgb(255, 255, 255);
+  transition: all 0.2s;
+}
+
+.search-container {
+  box-shadow:
+    0px 0px 20px rgba(0, 0, 0, 0.4),
+    0px 0px 0 8px rgb(255, 255, 255);
+}
+
+child:selected > *,
+child:hover {
+  --highlight-color: #8d3290;
+  font-family: Caveat brush;
+  color: white;
+  text-shadow:
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color),
+    0px 0px 4px var(--highlight-color);
+}
+
+.item-image {
+  margin-right: 14px;
+}
