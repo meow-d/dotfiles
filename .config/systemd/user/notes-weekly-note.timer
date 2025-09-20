@@ -2,7 +2,7 @@
 Description=Notes - weekly note
 
 [Timer]
-OnCalendar=Sun
+OnCalendar=Fri
 Persistent=true
 
 [Install]

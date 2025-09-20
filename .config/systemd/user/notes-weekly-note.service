@@ -4,4 +4,4 @@ Description=Notes - weekly note sync
 [Service]
 Type=oneshot
 ExecStartPre=%h/nerd-stuff/notes/scripts/sync.fish
-ExecStart=%h/nerd-stuff/notes/scripts/daily.fish
+ExecStart=%h/nerd-stuff/notes/scripts/weekly.fish
