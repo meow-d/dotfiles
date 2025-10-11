@@ -28,6 +28,9 @@ input {
             layout "us"
             options "caps:swapescape"
         }
+
+        repeat-delay 800
+        repeat-rate 25
     }
 
     // mouse settings
