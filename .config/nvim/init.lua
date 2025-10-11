@@ -9,20 +9,25 @@ if not vim.uv.fs_stat(lazypath) then
   vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
 end
 
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
 -- load plugins
 require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
+  spec = {
+    {
+      "NvChad/NvChad",
+      lazy = false,
+      branch = "v2.5",
+      import = "nvchad.plugins",
+    },
+
+    { import = "plugins" },
   },
 
-  { import = "plugins" },
+  change_detection = { notify = false },
 }, lazy_config)
 
 -- load theme
@@ -39,7 +44,7 @@ end)
 -- notes specific settings
 -- yes it's hacky as hell lol
 if vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes" then
-  vim.cmd("edit ./work todo.md")
-  vim.cmd("edit ./todo.md")
-  vim.cmd("ObsidianToday")
+  vim.cmd "edit ./work todo.md"
+  vim.cmd "edit ./todo.md"
+  vim.cmd "Obsidian today"
 end

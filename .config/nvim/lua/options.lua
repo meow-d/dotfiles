@@ -7,27 +7,43 @@ o.cursorlineopt = "both"
 o.wildmode = "longest,list,full"
 o.wildmenu = true
 o.relativenumber = true
+o.linebreak = true
 g.editorconfig = true
+o.breakindent = true
+o.autowriteall = true
+
 -- WHY do i need to do this?????
 g.markdown_recommended_style = 0
-o.breakindent = true
-
-o.autowriteall = true
 
 -- bullets.vim
 g.bullets_checkbox_markers = " -x"
 g.bullets_outline_levels = { "std-" }
 g.bullets_set_mappings = 0
-g.bullets_custom_mappings = {
-  { "imap", "<cr>", "<Plug>(bullets-newline)" },
-  { "inoremap", "<C-cr>", "<cr>" },
-  { "nmap", "o", "<Plug>(bullets-newline)" },
 
-  { "nmap", ">>", "<Plug>(bullets-demote)" },
-  { "vmap", ">", "<Plug>(bullets-demote)" },
-  { "nmap", "<<", "<Plug>(bullets-promote)" },
-  { "vmap", "<", "<Plug>(bullets-promote)" },
+g.bullets_custom_mappings = {
+	{ "imap", "<cr>", "<Plug>(bullets-newline)" },
+	{ "inoremap", "<C-cr>", "<cr>" },
+	{ "nmap", "o", "<Plug>(bullets-newline)" },
+
+	{ "nmap", ">>", "<Plug>(bullets-demote)" },
+	{ "vmap", ">", "<Plug>(bullets-demote)" },
+	{ "nmap", "<<", "<Plug>(bullets-promote)" },
+	{ "vmap", "<", "<Plug>(bullets-promote)" },
 }
+
+-- luasnip exit session on exiting insert mode
+-- this has haunted me for so long
+vim.api.nvim_create_autocmd('ModeChanged', {
+  pattern = '*',
+  callback = function()
+    if ((vim.v.event.old_mode == 's' and vim.v.event.new_mode == 'n') or vim.v.event.old_mode == 'i')
+      and require('luasnip').session.current_nodes[vim.api.nvim_get_current_buf()]
+      and not require('luasnip').session.jump_active
+    then
+      require('luasnip').unlink_current()
+    end
+  end
+})
 
 -- neovide
 if g.neovide then
