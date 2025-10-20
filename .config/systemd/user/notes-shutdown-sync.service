@@ -4,7 +4,7 @@ Description=Notes - sync git repo on shutdown
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStop=%h/nerd-stuff/notes/scripts/sync.fish
+ExecStart=%h/nerd-stuff/notes/scripts/sync.fish
 TimeoutStopSec=10s
 
 [Install]
