@@ -43,7 +43,7 @@ end)
 
 -- notes specific settings
 -- yes it's hacky as hell lol
-if vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes" then
+if os.getenv("NVIM_OPEN_NOTES") then
   vim.cmd "edit ./work todo.md"
   vim.cmd "edit ./todo.md"
   vim.cmd "Obsidian today"

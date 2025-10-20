@@ -1,11 +1,14 @@
 [Unit]
-Description=Notes - sync git repo on shutdown
+Description=Notes - sync git repo before shutdown
+After=network-online.target
+Before=shutdown.target
 
 [Service]
 Type=oneshot
-RemainAfterExit=true
-ExecStart=%h/nerd-stuff/notes/scripts/sync.fish
+ExecStart=/bin/true
+ExecStop=%h/nerd-stuff/notes/scripts/sync.fish
+RemainAfterExit=yes
 TimeoutStopSec=10s
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
