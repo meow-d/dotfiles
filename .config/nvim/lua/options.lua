@@ -7,6 +7,7 @@ o.cursorlineopt = "both"
 o.wildmode = "longest,list,full"
 o.wildmenu = true
 o.relativenumber = true
+o.scrolloff = 5
 o.linebreak = true
 g.editorconfig = true
 o.breakindent = true

@@ -13,6 +13,94 @@ return {
     end,
   },
 
+  {
+    "mfussenegger/nvim-dap",
+    event = "VeryLazy",
+    -- from https://www.johntobin.ie/blog/debugging_in_neovim_with_nvim-dap/
+    keys = {
+      {
+        "<leader>db",
+        function()
+          require("dap").toggle_breakpoint()
+        end,
+        desc = "Toggle Breakpoint",
+      },
+
+      {
+        "<leader>dc",
+        function()
+          require("dap").continue()
+        end,
+        desc = "Continue",
+      },
+
+      {
+        "<leader>dC",
+        function()
+          require("dap").run_to_cursor()
+        end,
+        desc = "Run to Cursor",
+      },
+
+      {
+        "<leader>dT",
+        function()
+          require("dap").terminate()
+        end,
+        desc = "Terminate",
+      },
+    },
+  },
+
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    event = "VeryLazy",
+    ---@type MasonNvimDapSettings
+    opts = {
+      handlers = {},
+      automatic_installation = {
+        exclude = {
+          -- "delve",
+          -- "python",
+        },
+      },
+      ensure_installed = {
+        -- "python",
+      },
+    },
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "williamboman/mason.nvim",
+    },
+  },
+
+  {
+    "theHamsta/nvim-dap-virtual-text",
+    event = "VeryLazy",
+    config = true,
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
+  },
+
+  {
+    "rcarriga/nvim-dap-ui",
+    event = "VeryLazy",
+    keys = {
+      {
+        "<leader>du",
+        function()
+          require("dapui").toggle({})
+        end,
+        desc = "Dap UI"
+      },
+    },
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
+    },
+  },
+
   -- editing
   {
     "echasnovski/mini.surround",
@@ -125,6 +213,9 @@ return {
         style = "normal",
         cell = "raw",
       },
+      code = {
+        border = "thin",
+      },
     },
   },
 
@@ -151,8 +242,15 @@ return {
     ---@module 'obsidian'
     ---@type obsidian.config
     opts = {
+      -- weird defaults
       legacy_commands = false,
-      ui = { enable = false },
+      frontmatter = { enabled = false },
+      checkbox = {
+        create_new = false,
+        order = { " ", "x" },
+      },
+
+      -- workspace configs
       workspaces = {
         {
           name = "notes",
@@ -168,14 +266,13 @@ return {
         folder = "./.obsidian-nvim-templates",
         date_format = "%A, %B %d, %Y",
       },
-      -- disable_frontmatter = true,
-      frontmatter = {
-        enabled = false,
-      },
+
+      -- others
+      ui = { enable = false },
       footer = {
         separator = "",
         format = "({{backlinks}} backlinks)",
-      }
+      },
     },
   },
 }

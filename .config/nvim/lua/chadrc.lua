@@ -8,20 +8,30 @@ local M = {}
 M.base46 = {
   theme = "pastelDark",
   transparency = true,
-  -- "#2e2c2f"
 
-  hl_override = {
-    Comment = { italic = true, fg = "#888888" },
-    ["@comment"] = { italic = true, fg = "#888888" },
-  },
   hl_add = {
-    RenderMarkdownH1Bg = { bg = "#555555" },
-    RenderMarkdownH2Bg = { bg = "#555555" },
-    RenderMarkdownH3Bg = { bg = "#555555" },
-    RenderMarkdownH4Bg = { bg = "#555555" },
-    RenderMarkdownH5Bg = { bg = "#555555" },
-    RenderMarkdownH6Bg = { bg = "#555555" },
+    RenderMarkdownH1Bg = { bg = "#744955" },
+    RenderMarkdownH2Bg = { bg = "#744955" },
+    RenderMarkdownH3Bg = { bg = "#744955" },
+    RenderMarkdownH4Bg = { bg = "#744955" },
+    RenderMarkdownH5Bg = { bg = "#744955" },
+    RenderMarkdownH6Bg = { bg = "#744955" },
   },
+
+   ---@diagnostic disable
+  changed_themes = {
+    pastelDark = {
+      base_16 = {
+        base02 = "#733B4B",
+      },
+      base_30 = {
+        grey = "#575E66",
+        grey_fg = "#888888",
+        line = "#575E66",
+      }
+    }
+   },
+  ---@diagnostic disable
 }
 
 M.ui = {
