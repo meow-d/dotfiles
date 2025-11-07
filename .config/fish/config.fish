@@ -73,6 +73,14 @@ else if command -v apt >/dev/null
     abbr --add d "sudo apt"
     abbr --add di "sudo apt install -y"
     abbr --add du "sudo apt remove -y"
+else if command -v paru >/dev/null
+    abbr --add d "paru"
+    abbr --add di "paru -S --noconfirm"
+    abbr --add du "paru -Rsu --noconfirm"
+else if command -v pacman >/dev/null
+    abbr --add d "sudo pacman"
+    abbr --add di "sudo pacman -S --noconfirm"
+    abbr --add du "sudo pacman -Rs --noconfirm"
 end
 
 ## git
@@ -104,3 +112,6 @@ abbr --add m --set-cursor 'string join "" (math -s 3 "% / $device_width * 100") 
 if status is-interactive; and string match -r "xterm-kitty|xterm-ghostty" $TERM -q
     fastfetch
 end
+
+# opencode
+fish_add_path /home/meow_d/.opencode/bin

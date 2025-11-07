@@ -12,6 +12,9 @@ o.linebreak = true
 g.editorconfig = true
 o.breakindent = true
 o.autowriteall = true
+o.foldmethod = 'expr'
+o.foldexpr = 'nvim_treesitter#foldexpr()'
+o.foldenable = false
 
 -- WHY do i need to do this?????
 g.markdown_recommended_style = 0

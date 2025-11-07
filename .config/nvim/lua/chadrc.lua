@@ -18,7 +18,7 @@ M.base46 = {
     RenderMarkdownH6Bg = { bg = "#744955" },
   },
 
-   ---@diagnostic disable
+  ---@diagnostic disable
   changed_themes = {
     pastelDark = {
       base_16 = {
@@ -27,21 +27,18 @@ M.base46 = {
       base_30 = {
         grey = "#575E66",
         grey_fg = "#888888",
+        light_grey = "#888888",
         line = "#575E66",
-      }
-    }
-   },
+      },
+    },
+  },
   ---@diagnostic disable
 }
 
 M.ui = {
-  tabufline = {
-    -- enabled = false
-  },
-
-  statusline = {
-    theme = "vscode_colored"
-  }
+  -- tabufline = { enabled = false },
+  -- statusline = { theme = "vscode_colored" },
+  cmp = { style = "default" },
 }
 
 return M

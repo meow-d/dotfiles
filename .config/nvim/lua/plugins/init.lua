@@ -13,6 +13,56 @@ return {
     end,
   },
 
+  -- completion
+  {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = { "hrsh7th/cmp-cmdline" },
+
+    opts = require "configs.cmp",
+
+    config = function(_, opts)
+      local cmp = require "cmp"
+
+      -- regular setup
+      cmp.setup(opts)
+
+      -- `/` cmdline config
+      cmp.setup.cmdline("/", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp_document_symbol" },
+        }, {
+          { name = "buffer" },
+        }),
+      })
+
+      -- `:` cmdline setup
+      cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = "path" },
+        }, {
+          {
+            name = "cmdline",
+            option = {
+              ignore_cmds = { "Man", "!" },
+            },
+          },
+        }),
+      })
+    end,
+  },
+
+  {
+    "hrsh7th/cmp-nvim-lsp-document-symbol",
+  },
+
+  {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
+  },
+
+  -- dap
   {
     "mfussenegger/nvim-dap",
     event = "VeryLazy",
@@ -65,7 +115,7 @@ return {
         },
       },
       ensure_installed = {
-        -- "python",
+        "python",
       },
     },
     dependencies = {
@@ -90,15 +140,30 @@ return {
       {
         "<leader>du",
         function()
-          require("dapui").toggle({})
+          require("dapui").toggle()
         end,
-        desc = "Dap UI"
+        desc = "Dap UI",
       },
     },
     dependencies = {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
     },
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup()
+
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end,
   },
 
   -- editing
@@ -111,9 +176,9 @@ return {
   },
 
   {
-    -- "numToStr/Comment.nvim",
-    -- this is so dumb!!
     "meow-d/Comment.nvim",
+    -- forked from:
+    -- "numToStr/Comment.nvim",
     lazy = false,
     opts = {
       mappings = {
@@ -144,58 +209,32 @@ return {
     lazy = false,
   },
 
-  -- more capable, but sets a map on ">" which breaks other plugins :(
-  -- {
-  --   "windwp/nvim-ts-autotag",
-  --   ft = { "html", "xml", "jsx", "tsx", "markdown", "xml", "php", "liquid" },
-  --   opts = {
-  --     opts = {
-  --       enable_close = true,
-  --       enable_rename = true,
-  --       enable_close_on_slash = true
-  --     }
-  --   },
-  -- },
-
-  -- {
-  --   "tronikelis/ts-autotag.nvim",
-  --   ft = { "html", "xml", "jsx", "tsx", "markdown", "xml", "php", "liquid" },
-  -- },
-
-  -- {
-  --   "github/copilot.vim",
-  --   lazy = false,
-  --   config = function()
-  --     vim.api.nvim_create_autocmd("VimEnter", {
-  --       callback = function()
-  --         local cwd = vim.fn.getcwd()
-  --         local home = vim.loop.os_homedir()
-  --         if cwd:match(home .. "/nerd%-stuff/notes") then
-  --           vim.g.copilot_enabled = 0
-  --         else
-  --           vim.g.copilot_enabled = 1
-  --         end
-  --       end,
-  --     })
-  --   end,
-  -- },
+  { "ku1ik/vim-pasta", lazy = false },
 
   -- navigation
   {
     "nvim-telescope/telescope.nvim",
     opts = {
-      defaults = {
-        winblend = 30,
+      -- translucent window
+      defaults = { winblend = 30 },
+      extensions = {
+        smart_open = {
+          match_algorithm = "fzf",
+        },
       },
     },
   },
 
   {
-    "nvim-telescope/telescope-frecency.nvim",
-    version = "*",
+    "danielfalk/smart-open.nvim",
+    branch = "0.2.x",
     config = function()
-      require("telescope").load_extension "frecency"
+      require("telescope").load_extension "smart_open"
     end,
+    dependencies = {
+      "kkharji/sqlite.lua",
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    },
   },
 
   -- markdown
@@ -229,8 +268,6 @@ return {
     "obsidian-nvim/obsidian.nvim",
     -- version = "*",
     ft = { "markdown" },
-    -- cond = vim.fn.getcwd() == vim.fn.expand "~/nerd-stuff/notes",
-    -- lazy = false,
 
     dependencies = {
       "nvim-lua/plenary.nvim",

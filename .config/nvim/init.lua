@@ -28,6 +28,7 @@ require("lazy").setup({
   },
 
   change_detection = { notify = false },
+  rocks = { enabled = false },
 }, lazy_config)
 
 -- load theme
