@@ -25,6 +25,17 @@ for _, lsp in ipairs(servers) do
   vim.lsp.enable(lsp)
 end
 
+-- px to vw lsp
+vim.lsp.config("px_to_vw_lsp", {
+  -- cmd = { "px-to-vw-lsp", "--log-level=debug" },
+  cmd = { "px-to-vw-lsp" },
+  filetypes = { "css", "scss", "less" },
+  root_dir = vim.fn.getcwd(),
+  workspace_required = false,
+  name = "px_to_vw_lsp",
+})
+vim.lsp.enable "px_to_vw_lsp"
+
 -- tailwindcss lsp
 vim.lsp.config("tailwindcss", {
   cmd = { "tailwindcss-language-server", "--stdio" },
@@ -54,4 +65,8 @@ vim.lsp.config("tailwindcss", {
   ),
 })
 vim.lsp.enable "tailwindcss"
+
+-- debug
+-- vim.lsp.set_log_level("trace")
+-- vim.lsp.log.set_format_func(vim.inspect)
 
