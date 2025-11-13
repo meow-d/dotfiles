@@ -34,6 +34,51 @@ if status --is-interactive
     end
 end
 
+# convert pixels to viewport width units (vw)
+set -l device_width 1440
+
+function m
+    argparse 'd/device-width=' -- $argv
+    or return
+    
+    if set -q _flag_device_width
+        set device_width $_flag_device_width
+    end
+    
+    if test (count $argv) -eq 0
+        echo "Usage: m INPUT [--device-width WIDTH]"
+        return 1
+    end
+    
+    set -l input $argv[1]
+    set -l result (string join "" (math -s 3 "$input / $device_width * 100") vw)
+    
+    echo $result | tee /dev/tty | wl-copy -n
+end
+
+# batch convert png to webp
+function to-webp
+  if test (count $argv) -eq 0
+    echo "Usage: to-webp FILE [FILE...]"
+    return 1
+  end
+
+  for file in $argv
+    set -l output (path change-extension '.webp' $file)
+    set -l original_size (stat -f%z $file 2>/dev/null; or stat -c%s $file 2>/dev/null)
+
+    echo "Converting $file -> $output"
+    magick $file -auto-orient -strip -resize "2000x1500>" -define webp:target-size=200000 $output
+
+    if test -f $output
+      set -l new_size (stat -f%z $output 2>/dev/null; or stat -c%s $output 2>/dev/null)
+      set -l saved (math "$original_size - $new_size")
+      set -l percent (math -s 1 "$saved / $original_size * 100")
+      echo " "(numfmt --to=iec-i --suffix=B $original_size)" -> "(numfmt --to=iec-i --suffix=B $new_size)" ($percent%)"
+    end
+  end
+end
+
 
 ### Init
 starship init fish | source
@@ -103,10 +148,6 @@ abbr --add gsh "git show"
 abbr --add gst "git stash"
 abbr --add gstp "git stash pop"
 
-## for work
-set device_width 412
-abbr --add m --set-cursor 'string join "" (math -s 3 "% / $device_width * 100") vw | tee /dev/tty | wl-copy -n'
-
 
 ### fastfetch
 if status is-interactive; and string match -r "xterm-kitty|xterm-ghostty" $TERM -q
@@ -115,3 +156,10 @@ end
 
 # opencode
 fish_add_path /home/meow_d/.opencode/bin
+
+# pnpm
+set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
