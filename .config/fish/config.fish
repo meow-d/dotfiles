@@ -35,12 +35,11 @@ if status --is-interactive
 end
 
 # convert pixels to viewport width units (vw)
-set -l device_width 1440
-
 function m
     argparse 'd/device-width=' -- $argv
     or return
     
+    set -l device_width 1440
     if set -q _flag_device_width
         set device_width $_flag_device_width
     end
