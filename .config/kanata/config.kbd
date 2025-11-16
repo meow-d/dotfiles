@@ -1,0 +1,61 @@
+(defcfg
+  process-unmapped-keys yes
+  debounce-duration 50
+  )
+(defsrc
+  a   s   d   f   c   m   h   j   k   l
+  )
+(defvar
+  tap-time 300
+  hold-time 200
+
+  left-hand-keys (
+                  q w e r t
+                  a s d f g
+                  z x c v b
+                  )
+  right-hand-keys (
+                   y u i o p
+                   h j k l ;
+                   n m , . /
+                   )
+  )
+
+;; home row mods
+;; from the example advanced home row mods config
+(deflayer base
+          @a  @s  @d  @f  @c  @m  h  @j  @k  @l
+          )
+(deflayer nomods
+          a   s   d   f   c   m   h   j   k   l
+          )
+(deffakekeys
+  to-base (layer-switch base)
+  to-base-nav (layer-switch base)
+  )
+(defalias
+  tap (multi (layer-switch nomods) (on-idle-fakekey to-base tap 20))
+
+  s (tap-hold-release-keys $tap-time $hold-time (multi s @tap) lalt $left-hand-keys)
+  d (tap-hold-release-keys $tap-time $hold-time (multi d @tap) lsft $left-hand-keys)
+  f (tap-hold-release-keys $tap-time $hold-time (multi f @tap) lctl $left-hand-keys)
+  c (tap-hold-release-keys $tap-time $hold-time (multi c @tap) lmet $left-hand-keys)
+
+  m (tap-hold-release-keys $tap-time $hold-time (multi m @tap) rmet $right-hand-keys)
+  j (tap-hold-release-keys $tap-time $hold-time (multi j @tap) rctl $right-hand-keys)
+  k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rsft $right-hand-keys)
+  l (tap-hold-release-keys $tap-time $hold-time (multi l @tap) ralt $right-hand-keys)
+  )
+
+;; navigation layer
+(deflayer nav
+          @a2   @s   @d   @f   @c    m   left   down   up   right
+          )
+
+(defalias
+  a (tap-hold-release-keys $tap-time $hold-time (multi a @tap) (layer-switch nav) $left-hand-keys)
+  a2 (tap-hold-release-keys $tap-time $hold-time (multi a @tap) (layer-switch base) $left-hand-keys)
+  )
+
+;; for syntax highlighting, even though it doesn't exactly match up
+;; vim: ft=scheme
