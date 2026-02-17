@@ -26,8 +26,8 @@ input {
     keyboard {
         xkb {
             layout "us"
-            options "caps:swapescape"
-        }
+      // options "caps:swapescape"
+    }
 
         repeat-delay 800
         repeat-rate 25
