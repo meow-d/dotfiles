@@ -45,7 +45,7 @@ end)
 -- notes specific settings
 -- yes it's hacky as hell lol
 if os.getenv("NVIM_OPEN_NOTES") then
-  vim.cmd "edit ./work todo.md"
+  vim.cmd "edit ./School todo.md"
   vim.cmd "edit ./todo.md"
   vim.cmd "Obsidian today"
 end

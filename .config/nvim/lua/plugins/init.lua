@@ -13,6 +13,14 @@ return {
     end,
   },
 
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = { "java" },
+    config = function()
+      vim.lsp.enable "jdtls"
+    end,
+  },
+
   -- completion
   {
     "hrsh7th/nvim-cmp",
@@ -150,8 +158,8 @@ return {
       "nvim-neotest/nvim-nio",
     },
     config = function()
-      local dap = require("dap")
-      local dapui = require("dapui")
+      local dap = require "dap"
+      local dapui = require "dapui"
       dapui.setup()
 
       dap.listeners.after.event_initialized["dapui_config"] = function()
@@ -310,6 +318,7 @@ return {
         separator = "",
         format = "({{backlinks}} backlinks)",
       },
+      attachments = { img_folder = "/attachments" },
     },
   },
 }

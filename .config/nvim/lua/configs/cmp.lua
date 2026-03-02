@@ -71,4 +71,10 @@ local options = {
   },
 }
 
+-- idk??
+local luasnip = require "luasnip"
+luasnip.filetype_extend("typescriptreact", { "javascript", "html" })
+luasnip.filetype_extend("typescript", { "javascript" })
+require("luasnip/loaders/from_vscode").lazy_load()
+
 return vim.tbl_deep_extend("force", options, require "nvchad.cmp")

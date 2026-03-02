@@ -11,10 +11,14 @@ set -x STARSHIP_LOG error
 
 set -x VISUAL nvim
 set -x EDITOR $VISUAL
+set -x CATALINA_HOME /opt/tomcat
+set -x CATALINA_BASE $HOME/nerd-stuff/4_school/module-epda
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
 fish_add_path $HOME/.local/lib/dart-sdk/bin
+fish_add_path $HOME/.cache/rebar3/bin
+fish_add_path /home/meow_d/.opencode/bin
 
 set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
@@ -23,6 +27,11 @@ end
 
 if command -v mise >/dev/null
   mise activate fish | source
+end
+
+set -gx MATLAB_HOME "$HOME/matlab"
+if not string match -q -- "$MATLAB_HOME/bin" $PATH
+  set -gx PATH "$MATLAB_HOME/bin" $PATH
 end
 
 
@@ -153,12 +162,3 @@ if status is-interactive; and string match -r "xterm-kitty|xterm-ghostty" $TERM 
     fastfetch
 end
 
-# opencode
-fish_add_path /home/meow_d/.opencode/bin
-
-# pnpm
-set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end

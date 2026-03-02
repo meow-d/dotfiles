@@ -14,6 +14,7 @@ local servers = {
   "clangd",
   "jsonls",
   "phpactor",
+  "gleam",
 }
 
 for _, lsp in ipairs(servers) do
@@ -69,4 +70,3 @@ vim.lsp.enable "tailwindcss"
 -- debug
 -- vim.lsp.set_log_level("trace")
 -- vim.lsp.log.set_format_func(vim.inspect)
-
