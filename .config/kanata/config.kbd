@@ -1,35 +1,36 @@
 (defcfg
-  process-unmapped-keys yes
+  ;; process-unmapped-keys yes
   ;; debounce-duration 50
   linux-dev-names-exclude (
     "UGTABLET 4 inch PenTablet Keyboard"
     )
   )
-(defsrc
-  a   s   d   f   c   m   h   j   k   l
-  )
-(defvar
-  tap-time 300
-  hold-time 200
 
-  left-hand-keys (
-                  q w e r t
-                  a s d f g
-                  z x c v b
-                  )
-  right-hand-keys (
-                   y u i o p
-                   h j k l ;
-                   n m , . /
-                   )
-  )
-
-(deflayermap (base-layer)
-  caps esc
+(defsrc caps esc)
+(deflayer base
   esc caps)
 
-;; home row mods
-;; from the example advanced home row mods config
+;; (defsrc
+;;   a   s   d   f   c   m   h   j   k   l
+;;   )
+;; (defvar
+;;   tap-time 300
+;;   hold-time 200
+;; 
+;;   left-hand-keys (
+;;                   q w e r t
+;;                   a s d f g
+;;                   z x c v b
+;;                   )
+;;   right-hand-keys (
+;;                    y u i o p
+;;                    h j k l ;
+;;                    n m , . /
+;;                    )
+;;   )
+;; 
+;; ;; home row mods
+;; ;; from the example advanced home row mods config
 ;; (deflayer base
 ;;           @a  @s  @d  @f  @c  @m  h  @j  @k  @l
 ;;           )
