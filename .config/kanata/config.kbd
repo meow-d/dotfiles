@@ -1,6 +1,6 @@
 (defcfg
-  ;; process-unmapped-keys yes
-  ;; debounce-duration 50
+  process-unmapped-keys yes
+  debounce-duration 50
   linux-dev-names-exclude (
     "UGTABLET 4 inch PenTablet Keyboard"
     )
