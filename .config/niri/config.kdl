@@ -1,3 +1,4 @@
+// vim: set ts=4 sw=4:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 // https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl
 
@@ -98,7 +99,7 @@ window-rule {
 window-rule {
     match app-id="code"
     match app-id="Code"
-    opacity 0.9
+    opacity 0.96
 }
 
 // keybinds

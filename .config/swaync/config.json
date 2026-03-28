@@ -1,6 +1,9 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
 
+  "notification-2fa-action": false,
+  "notification-inline-replies": false,
+
   "text-empty": "all alone...",
 
   "widgets": [
