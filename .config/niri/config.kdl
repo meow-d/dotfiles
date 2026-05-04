@@ -48,23 +48,25 @@ input {
 
 // looks
 layout {
-    gaps 5
+    gaps 15
 
     focus-ring {
-        width 0
-        active-color "#ffff"
-        // active-gradient from="#E9CFD7" to="#B595CD" angle=45
+        width 0 
+        active-color "#95636B"
+        // active-gradient from="#E8B2BC" to="#95636B" angle=75
     }
 
     shadow {
         on
         draw-behind-window false
-        softness 5
-        spread 0
+        // softness 10 
+        spread 3
         offset x=0 y=0
-        color "#ffff"
+        color "#000000"
         inactive-color "#0000"
     }
+
+    background-color "transparent"
 }
 
 hotkey-overlay {
@@ -76,11 +78,22 @@ output "eDP-1" {
 }
 
 window-rule {
-    geometry-corner-radius 15
+    geometry-corner-radius 25
     clip-to-geometry true
     draw-border-with-background false
 }
 
+// overview
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}
 
 // app specific rules
 window-rule {
@@ -100,6 +113,63 @@ window-rule {
     match app-id="code"
     match app-id="Code"
     opacity 0.96
+}
+
+// blur
+window-rule {
+    match app-id="kitty"
+    match app-id="code"
+    match app-id="Code"
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+layer-rule {
+    match namespace="waybar"
+    // ughhhh
+    // match namespace="swaync-control-center"
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+blur {
+    passes 3
+    offset 2
+    noise 0.075
+    saturation 1.5
+}
+
+// cursor
+cursor {
+    hide-when-typing
+    hide-after-inactive-ms 1000
+}
+
+// animations
+include "animations/blur.kdl"
+
+animations {
+    workspace-switch {
+        spring damping-ratio=1.5 stiffness=1000 epsilon=0.0001
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=1.25 stiffness=800 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=1.25 stiffness=800 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=0.8 stiffness=500 epsilon=0.0001
+    }
 }
 
 // keybinds
