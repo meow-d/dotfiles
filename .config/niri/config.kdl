@@ -11,14 +11,8 @@ environment {
 
 
 // autostart
-// systemd is used instead
+// we're using systemd instead
 // https://github.com/YaLTeR/niri/wiki/Example-systemd-Setup
-
-// autostart (apps)
-// xdg-autostart is used instead
-// spawn-at-startup "firefox"
-// spawn-at-startup "sh" "-c" "kitty --hold -d ~/nerd-stuff/notes/ nvim"
-// spawn-at-startup "code" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"
 
 
 // input
@@ -83,6 +77,7 @@ window-rule {
     draw-border-with-background false
 }
 
+
 // overview
 overview {
     workspace-shadow {
@@ -94,6 +89,7 @@ layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
 }
+
 
 // app specific rules
 window-rule {
@@ -115,6 +111,7 @@ window-rule {
     opacity 0.96
 }
 
+
 // blur
 window-rule {
     match app-id="kitty"
@@ -129,7 +126,6 @@ window-rule {
 
 layer-rule {
     match namespace="waybar"
-    // ughhhh
     // match namespace="swaync-control-center"
 
     background-effect {
@@ -139,17 +135,17 @@ layer-rule {
 }
 
 blur {
-    passes 3
-    offset 2
-    noise 0.075
-    saturation 1.5
+    noise 0.1
 }
+
 
 // cursor
 cursor {
-    hide-when-typing
-    hide-after-inactive-ms 1000
+    xcursor-theme "PJSK Mizuki Animated"
+    // hide-when-typing
+    hide-after-inactive-ms 9000
 }
+
 
 // animations
 include "animations/blur.kdl"
@@ -171,6 +167,7 @@ animations {
         spring damping-ratio=0.8 stiffness=500 epsilon=0.0001
     }
 }
+
 
 // keybinds
 binds {
