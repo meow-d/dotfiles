@@ -23,6 +23,7 @@ g.markdown_recommended_style = 0
 g.bullets_checkbox_markers = " -x"
 g.bullets_outline_levels = { "std-" }
 g.bullets_set_mappings = 0
+g.bullets_nested_checkboxes = 0
 
 g.bullets_custom_mappings = {
 	{ "imap", "<cr>", "<Plug>(bullets-newline)" },
