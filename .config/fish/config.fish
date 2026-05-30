@@ -20,6 +20,8 @@ fish_add_path $HOME/.local/lib/dart-sdk/bin
 fish_add_path $HOME/.cache/rebar3/bin
 fish_add_path /home/meow_d/.opencode/bin
 
+eval (ssh-agent -c)
+
 set -gx PNPM_HOME "/home/meow_d/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
