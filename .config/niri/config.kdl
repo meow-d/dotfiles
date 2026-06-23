@@ -77,7 +77,6 @@ window-rule {
     draw-border-with-background false
 }
 
-
 // overview
 overview {
     workspace-shadow {
@@ -91,10 +90,15 @@ layer-rule {
 }
 
 
+// workspaces
+workspace "1"
+workspace "2"
+
 // app specific rules
 window-rule {
     match app-id="krita"
     open-maximized true
+    open-on-workspace "2"
 }
 
 window-rule {
