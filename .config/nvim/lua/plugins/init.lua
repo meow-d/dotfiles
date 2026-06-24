@@ -321,4 +321,12 @@ return {
       attachments = { img_folder = "/attachments" },
     },
   },
+
+  -- language specific
+  {
+    "ravsii/tree-sitter-d2",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    version = "*",
+    build = "make nvim-install",
+  },
 }
