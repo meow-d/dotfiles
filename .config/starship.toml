@@ -2,7 +2,7 @@
 
 # gotta exclude line_break from $all
 format = """
-[ ❖ ❀ ](bright-purple)$character[ ❀ ❖ ](bright-purple)$all[♡ ✧･ﾟ*✧･ﾟ](bright-purple)\
+[ ❖ ❀ ](bright-purple)$character[ ❀ ❖ ](bright-purple)${env_var.ZMX_SESSION}$all[♡ ✧･ﾟ*✧･ﾟ](bright-purple)\
 $line_break\
 [ ❖](bright-purple) """
 
@@ -28,6 +28,13 @@ modified = "!"
 staged = "+"
 untracked = "?"
 conflicted = "≋"
+
+# see https://zmx.sh/
+[env_var.ZMX_SESSION]
+symbol = " "
+format = "[$symbol$env_value]($style) "
+description = "zmx session name"
+style = "bold magenta"
 
 [aws]
 symbol = "aws "
