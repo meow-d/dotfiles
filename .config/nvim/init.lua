@@ -45,17 +45,8 @@ end)
 -- notes specific settings
 -- yes it's hacky as hell lol
 if os.getenv("NVIM_OPEN_NOTES") then
-  vim.cmd "edit ./school todo.md"
+  vim.cmd "edit ./work todo.md"
   vim.cmd "edit ./todo.md"
   vim.cmd "Obsidian today"
 end
 
--- custom treesitter parser
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config["html"] = {
-  install_info = {
-    url = "~/nerd-stuff/1-personal/wp-html-treesitter/",
-    files = {"src/parser.c", "src/scanner.c"},
-    requires_generate_from_grammar = false,
-  },
-}

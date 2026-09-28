@@ -15,6 +15,7 @@ local servers = {
   "jsonls",
   "phpactor",
   "gleam",
+  "tinymist"
 }
 
 for _, lsp in ipairs(servers) do

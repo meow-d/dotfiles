@@ -1,8 +1,3 @@
-### Keybindings
-bind \e\[3\;5~ kill-word
-bind \cH backward-kill-word
-
-
 ### Variables
 set -x LC_ALL "en_US.UTF-8"
 
@@ -11,14 +6,13 @@ set -x STARSHIP_LOG error
 
 set -x VISUAL nvim
 set -x EDITOR $VISUAL
-set -x CATALINA_HOME /opt/tomcat
-set -x CATALINA_BASE $HOME/nerd-stuff/4_school/module-epda
+set -x PODMAN_COMPOSE_PROVIDER /usr/bin/podman-compose
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.local/lib/flutter/bin
 fish_add_path $HOME/.local/lib/dart-sdk/bin
 fish_add_path $HOME/.cache/rebar3/bin
-fish_add_path /home/meow_d/.opencode/bin
+fish_add_path $HOME/.opencode/bin
 
 eval (ssh-agent -c) > /dev/null
 
@@ -31,39 +25,12 @@ if command -v mise >/dev/null
   mise activate fish | source
 end
 
-set -gx MATLAB_HOME "$HOME/matlab"
-if not string match -q -- "$MATLAB_HOME/bin" $PATH
-  set -gx PATH "$MATLAB_HOME/bin" $PATH
-end
-
-
 ### Functions
 # auto ls when change directory
 if status --is-interactive
     function list_dir --on-variable PWD
         ls
     end
-end
-
-# convert pixels to viewport width units (vw)
-function m
-    argparse 'd/device-width=' -- $argv
-    or return
-    
-    set -l device_width 1440
-    if set -q _flag_device_width
-        set device_width $_flag_device_width
-    end
-    
-    if test (count $argv) -eq 0
-        echo "Usage: m INPUT [--device-width WIDTH]"
-        return 1
-    end
-    
-    set -l input $argv[1]
-    set -l result (string join "" (math -s 3 "$input / $device_width * 100") vw)
-    
-    echo $result | tee /dev/tty | wl-copy -n
 end
 
 # batch convert png to webp
