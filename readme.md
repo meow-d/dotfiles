@@ -34,8 +34,8 @@ personal dotfiles, managed using yadm, not intended for public use obviously. sc
 
 - apps:
   - yt-dlp
-  - mpv
   - aria2
+  - mpv
 
 ## install
 for my own reference
@@ -74,8 +74,8 @@ fisher install kidonng/zoxide.fish
   - latte dock
 
 - terminal:
-  - zsh
   - wezterm
+  - zsh
 
 - editor:
   - micro
